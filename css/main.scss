@@ -1,15 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
+$text-border: #707070;
+$dark-theme-text: #78e0dc;
+$light-theme-bg: #f6f5f5;
+$dark-theme-bg: #22223b;
+$accent: #ef3e36;
+$light-theme-text: #40798c;
+
+//Mobile
+$mobile-heading-size: 50px;
+$mobile-skills-size: 25px;
+
+//Tablet
+$tablet-paragraph-size: 30px;
+$tablet-heading-size: 50px;
+$tablet-skills-size: 35px;
+
+//Desktop
+$desktop-skills-size: 50px;
+$desktop-heading-size: 4.0625rem;
+$desktop-paragraph-size: 32px;
+
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: $light-theme-bg;
 }
 
-// Tablet
-@media only screen and (min-width: 768px) {
+.hero-section {
+    position: relative;
+    height: 1080px;
+    width: 100%;
 
-}
+    svg{
+        position: absolute;
+        bottom: 0;
+        width: 101vw;
+    }
 
-// Laptop/Desktop
-@media only screen and (min-width: 1920px) {
-    
+    h1 {
+        color: $light-theme-text;
+        font-weight: 400;
+        font-size: $desktop-heading-size;
+        line-height: 6.125rem;
+        text-align: left;
+        letter-spacing: 0px;
+        
+        margin-top: 15.8125rem;
+        margin-left: 12.375rem;
+        
+        text-shadow: 0.5px 0.5px $text-border;
+
+        span {
+            font-weight: 200;
+        }
+    }
+
+    img {
+        height: 421px;
+        width: 421px;
+        padding-left: 21px;
+
+        margin-top: 11.625rem;
+        margin-right: 17rem;
+    }
 }

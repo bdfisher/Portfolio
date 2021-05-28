@@ -1,5 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #f6f5f5;
+}
+
+.hero-section {
+  position: relative;
+  height: 1080px;
+  width: 100%;
+}
+
+.hero-section svg {
+  position: absolute;
+  bottom: 0;
+  width: 101vw;
+}
+
+.hero-section h1 {
+  color: #40798c;
+  font-weight: 400;
+  font-size: 4.0625rem;
+  line-height: 6.125rem;
+  text-align: left;
+  letter-spacing: 0px;
+  margin-top: 15.8125rem;
+  margin-left: 12.375rem;
+  text-shadow: 0.5px 0.5px #707070;
+}
+
+.hero-section h1 span {
+  font-weight: 200;
+}
+
+.hero-section img {
+  height: 421px;
+  width: 421px;
+  padding-left: 21px;
+  margin-top: 11.625rem;
+  margin-right: 17rem;
 }
 /*# sourceMappingURL=main.css.map */
