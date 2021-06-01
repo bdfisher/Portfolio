@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
 $text-border: #707070;
 $dark-theme-text: #78e0dc;
@@ -22,22 +22,9 @@ $desktop-heading-size: 4.0625rem;
 $desktop-paragraph-size: 32px;
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: $light-theme-bg;
     overflow-x: hidden;
-}
-
-.hero-section {
-    position: relative;
-    height: 1080px;
-    width: 100%;
-
-    svg{
-        position: absolute;
-        bottom: 0;
-        width: 101vw;
-        z-index: -1;
-    }
 
     h1 {
         color: $light-theme-text;
@@ -46,10 +33,25 @@ body {
         line-height: 6.125rem;
         text-align: left;
         letter-spacing: 0px;
-        
+    }
+}
+
+.hero-section {
+    position: relative;
+    height: 1080px;
+    width: 100%;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        width: 101vw;
+        z-index: -1;
+    }
+
+    h1 {
         margin-top: 15.8125rem;
         margin-left: 12.375rem;
-        
+
         text-shadow: 0.5px 0.5px $text-border;
 
         span {
@@ -64,5 +66,78 @@ body {
 
         margin-top: 11.625rem;
         margin-right: 17rem;
+    }
+
+    .indicator {
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        width: 30px;
+        height: 30px;
+        transform: rotate(45deg);
+        z-index: 0;
+    }
+    .indicator span {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid $dark-theme-bg;
+        border-right: 3px solid $dark-theme-bg;
+        animation: animate 1.5s linear infinite;
+    }
+    .indicator span:nth-child(1) {
+        top: -30px;
+        left: -30px;
+        animation-delay: 0s;
+    }
+    .indicator span:nth-child(2) {
+        top: -20px;
+        left: -20px;
+        animation-delay: 0.3s;
+    }
+    .indicator span:nth-child(3) {
+        top: -10px;
+        left: -10px;
+        animation-delay: 0.6s;
+    }
+    .indicator span:nth-child(4) {
+        top: 0px;
+        left: 0px;
+        animation-delay: 0.9s;
+    }
+    .indicator span:nth-child(5) {
+        top: 10px;
+        left: 10px;
+        animation-delay: 1.2s;
+    }
+    @keyframes animate {
+        0% {
+            border-color: $dark-theme-bg;
+            transform: translate(0, 0);
+        }
+        20% {
+            border-color: $dark-theme-bg;
+            transform: translate(15px, 15px);
+        }
+        20.1%,
+        100% {
+            border-color: $accent;
+        }
+    }
+}
+
+.about-me {
+    position: relative;
+    height: 1080px;
+    width: 100%;
+
+    h1 {
+        text-decoration: underline;
+        margin-top: 148px;
+        text-align: center;
     }
 }
