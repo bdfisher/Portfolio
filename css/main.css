@@ -2,6 +2,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f6f5f5;
+  overflow-x: hidden;
 }
 
 .hero-section {
@@ -14,6 +15,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 101vw;
+  z-index: -1;
 }
 
 .hero-section h1 {
