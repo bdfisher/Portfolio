@@ -8,15 +8,7 @@ body {
   padding: 0;
 }
 
-body h1 {
-  font-weight: 400;
-  font-size: 4.06rem;
-  line-height: 6.125rem;
-  text-align: left;
-  letter-spacing: 0px;
-}
-
-body .indicator {
+.indicator {
   position: absolute;
   left: 50%;
   margin-right: -50%;
@@ -30,7 +22,7 @@ body .indicator {
   z-index: 0;
 }
 
-body .indicator span {
+.indicator span {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -45,48 +37,56 @@ body .indicator span {
           animation: animate 1.5s linear infinite;
 }
 
-body .indicator span:nth-child(1) {
+.indicator span:nth-child(1) {
   top: -30px;
   left: -30px;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
-body .indicator span:nth-child(2) {
+.indicator span:nth-child(2) {
   top: -20px;
   left: -20px;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-body .indicator span:nth-child(3) {
+.indicator span:nth-child(3) {
   top: -10px;
   left: -10px;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-body .indicator span:nth-child(4) {
+.indicator span:nth-child(4) {
   top: 0px;
   left: 0px;
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
 
-body .indicator span:nth-child(5) {
+.indicator span:nth-child(5) {
   top: 10px;
   left: 10px;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-body .top-right {
+h1 {
+  font-weight: 400;
+  font-size: 4.06rem;
+  line-height: 6.125rem;
+  text-align: left;
+  letter-spacing: 0px;
+}
+
+.top-right {
   position: absolute;
   right: 0;
   z-index: -1;
 }
 
-body .bottom-left {
+.bottom-left {
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -100,9 +100,9 @@ body .bottom-left {
   display: grid;
   -ms-grid-columns: 2fr 1fr 0.2fr;
       grid-template-columns: 2fr 1fr 0.2fr;
-  -ms-grid-rows: .2fr 4fr 2fr;
-      grid-template-rows: .2fr 4fr 2fr;
-      grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
+  -ms-grid-rows: 0.2fr 4fr 2fr;
+      grid-template-rows: 0.2fr 4fr 2fr;
+      grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
 }
 
 .hero-section .hero-text {
@@ -206,11 +206,11 @@ body .bottom-left {
   top: -3.2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .8fr 2fr 1fr .8fr;
-      grid-template-columns: .8fr 2fr 1fr .8fr;
+  -ms-grid-columns: 0.8fr 2fr 1fr 0.8fr;
+      grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
   -ms-grid-rows: 1fr 3fr;
       grid-template-rows: 1fr 3fr;
-      grid-template-areas: "... title title ..." "... text image ...";
+      grid-template-areas: "... title title ..." "... text image ...";
 }
 
 .about-me svg {
@@ -266,9 +266,9 @@ body .bottom-left {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: .8fr 3fr;
-      grid-template-rows: .8fr 3fr;
-      grid-template-areas: "title title title" "card1 card2 card3";
+  -ms-grid-rows: 0.8fr 3fr;
+      grid-template-rows: 0.8fr 3fr;
+      grid-template-areas: "title title title" "card1 card2 card3";
   gap: 1em 3em;
 }
 
@@ -288,8 +288,8 @@ body .bottom-left {
 .work .card {
   width: 700px;
   height: 521px;
-  -webkit-box-shadow: 0px 2px 10px #40798CCC;
-          box-shadow: 0px 2px 10px #40798CCC;
+  -webkit-box-shadow: 0px 2px 10px #40798ccc;
+          box-shadow: 0px 2px 10px #40798ccc;
   border-radius: 5px;
   padding: 0;
   -ms-grid-column-align: center;
@@ -341,11 +341,11 @@ body .bottom-left {
   top: -3.2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .8fr 1fr 1fr 1fr .8fr;
-      grid-template-columns: .8fr 1fr 1fr 1fr .8fr;
-  -ms-grid-rows: .5fr 125px 125px 125px 125px;
-      grid-template-rows: .5fr 125px 125px 125px 125px;
-      grid-template-areas: "... title title title ..." "... icons text1 memoji ..." "... bootstrap text2 memoji ..." "... drupal text3 memoji ..." "... adobe text4 memoji ...";
+  -ms-grid-columns: 0.8fr 1fr 1fr 1fr 0.8fr;
+      grid-template-columns: 0.8fr 1fr 1fr 1fr 0.8fr;
+  -ms-grid-rows: 0.5fr 125px 125px 125px 125px;
+      grid-template-rows: 0.5fr 125px 125px 125px 125px;
+      grid-template-areas: "... title title title ..." "... icons text1 memoji ..." "... bootstrap text2 memoji ..." "... drupal text3 memoji ..." "... adobe text4 memoji ...";
 }
 
 .skills .title {
@@ -450,7 +450,8 @@ body .bottom-left {
       align-self: center;
 }
 
-.skills i, .skills svg {
+.skills i,
+.skills svg {
   font-size: 5.5em;
   padding: 0 6px 0 6px;
 }
@@ -486,9 +487,9 @@ body .bottom-left {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: .5fr 4fr .5fr;
-      grid-template-rows: .5fr 4fr .5fr;
-      grid-template-areas: "title" "form" "icons";
+  -ms-grid-rows: 0.5fr 4fr 0.5fr;
+      grid-template-rows: 0.5fr 4fr 0.5fr;
+      grid-template-areas: "title" "form" "icons";
 }
 
 .contact .title {
@@ -519,7 +520,8 @@ body .bottom-left {
   font-size: 25px;
 }
 
-.contact .container form input, .contact .container form textarea {
+.contact .container form input,
+.contact .container form textarea {
   width: 621px;
   margin-bottom: 1rem;
 }
@@ -566,7 +568,9 @@ body .bottom-left {
           box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.contact .container form button:hover, .contact .container form button:focus, .contact .container form button:active {
+.contact .container form button:hover,
+.contact .container form button:focus,
+.contact .container form button:active {
   -webkit-animation-name: btn;
   animation-name: btn;
   -webkit-animation-duration: 1s;
@@ -599,7 +603,10 @@ body .bottom-left {
   transition-property: transform, -webkit-transform;
 }
 
-.contact .icons a, .contact .icons :visited, .contact .icons :hover, .contact .icons :focus {
+.contact .icons a,
+.contact .icons :visited,
+.contact .icons :hover,
+.contact .icons :focus {
   color: #40798c;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);

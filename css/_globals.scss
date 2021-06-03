@@ -1,0 +1,11 @@
+@import "variables";
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: $light-theme-bg;
+    overflow-x: hidden;
+    color: $light-theme-text;
+
+    margin: 0;
+    padding: 0;
+}

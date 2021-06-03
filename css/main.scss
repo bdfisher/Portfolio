@@ -1,510 +1,437 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import "globals";
+@import "variables";
+@import "indicator";
 
-$text-border: #707070;
-$dark-theme-text: #78e0dc;
-$light-theme-bg: #f6f5f5;
-$dark-theme-bg: #22223b;
-$accent: #ef3e36;
-$light-theme-text: #40798c;
+h1 {
+  font-weight: 400;
+  font-size: $desktop-heading-size;
+  line-height: 6.125rem;
+  text-align: left;
+  letter-spacing: 0px;
+}
 
-//Mobile
-$mobile-heading-size: 3.125rem;
-$mobile-skills-size: 1.56rem;
+.top-right {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
 
-//Tablet
-$tablet-paragraph-size: 1.875rem;
-$tablet-heading-size: 3.125rem;
-$tablet-skills-size: 2.19rem;
-
-//Desktop
-$desktop-skills-size: 3.125rem;
-$desktop-heading-size: 4.06rem;
-$desktop-paragraph-size: 2rem;
-
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: $light-theme-bg;
-    overflow-x: hidden;
-    color: $light-theme-text;
-
-    margin: 0;
-    padding: 0;
-
-    h1 {
-        font-weight: 400;
-        font-size: $desktop-heading-size;
-        line-height: 6.125rem;
-        text-align: left;
-        letter-spacing: 0px;
-    }
-
-    .indicator {
-        position: absolute;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        bottom: 55px;
-        width: 30px;
-        height: 30px;
-        transform: rotate(45deg);
-        z-index: 0;
-    }
-    .indicator span {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 3px solid $dark-theme-bg;
-        border-right: 3px solid $dark-theme-bg;
-        animation: animate 1.5s linear infinite;
-    }
-    .indicator span:nth-child(1) {
-        top: -30px;
-        left: -30px;
-        animation-delay: 0s;
-    }
-    .indicator span:nth-child(2) {
-        top: -20px;
-        left: -20px;
-        animation-delay: 0.3s;
-    }
-    .indicator span:nth-child(3) {
-        top: -10px;
-        left: -10px;
-        animation-delay: 0.6s;
-    }
-    .indicator span:nth-child(4) {
-        top: 0px;
-        left: 0px;
-        animation-delay: 0.9s;
-    }
-    .indicator span:nth-child(5) {
-        top: 10px;
-        left: 10px;
-        animation-delay: 1.2s;
-    }
-
-    .top-right {
-        position: absolute;
-        right: 0;
-        z-index: -1;
-    }
-
-    .bottom-left {
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-    }
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
 .hero-section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 
-    display: grid;
-    grid-template-columns: 2fr 1fr 0.2fr;
-    grid-template-rows: .2fr 4fr 2fr;
-    grid-template-areas: 
-        "... ... toggle"
-        "text image ..."
-        "wave wave wave";
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.2fr;
+  grid-template-rows: 0.2fr 4fr 2fr;
+  grid-template-areas:
+    "... ... toggle"
+    "text image ..."
+    "wave wave wave";
 
-    .hero-text {
-        grid-area: text;
-        justify-self: center;
-        align-self: center;
+  .hero-text {
+    grid-area: text;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .hero-image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .wave {
+    grid-area: wave;
+    align-self: end;
+    margin-bottom: -0.625em;
+
+    svg {
+      width: 101vw;
     }
+  }
 
-    .hero-image {
-        grid-area: image;
-        justify-self: center;
-        align-self: center;
+  .toggle {
+    grid-area: toggle;
+    padding-top: 1rem;
+    i {
+      font-size: 27px;
+      transform: rotate(-20deg);
+      color: $dark-theme-bg;
     }
+  }
 
-    .wave {
-        grid-area: wave;
-        align-self: end;
-        margin-bottom: -0.625em;
+  h1 {
+    text-shadow: 0.5px 0.5px $text-border;
 
-        svg {
-            width: 101vw;
-        }
+    span {
+      font-weight: 200;
     }
+  }
 
-    .toggle {
-        grid-area: toggle;
-        padding-top: 1rem;
-        i {
-            font-size: 27px;
-            transform: rotate(-20deg);
-            color: $dark-theme-bg;
-        }
+  img {
+    height: 421px;
+    width: 421px;
+  }
+
+  @keyframes animate {
+    0% {
+      border-color: $dark-theme-bg;
+      transform: translate(0, 0);
     }
-
-    h1 {
-        text-shadow: 0.5px 0.5px $text-border;
-
-        span {
-            font-weight: 200;
-        }
+    20% {
+      border-color: $dark-theme-bg;
+      transform: translate(15px, 15px);
     }
-
-    img {
-        height: 421px;
-        width: 421px;
+    20.1%,
+    100% {
+      border-color: $accent;
     }
-
-    @keyframes animate {
-        0% {
-            border-color: $dark-theme-bg;
-            transform: translate(0, 0);
-        }
-        20% {
-            border-color: $dark-theme-bg;
-            transform: translate(15px, 15px);
-        }
-        20.1%,
-        100% {
-            border-color: $accent;
-        }
-    }
+  }
 }
 
 .about-me {
-    position: relative;
-    height: 90vh;
-    width: 100%;
-    top: -3.2rem;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  top: -3.2rem;
 
-    display: grid;
-    grid-template-columns: .8fr 2fr 1fr .8fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: 
-        "... title title ..."
-        "... text image ...";
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "... title title ..."
+    "... text image ...";
 
-    
+  svg {
+    z-index: -1;
+  }
 
-    svg {
-        z-index: -1;
+  .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: end;
+
+    h1 {
+      text-decoration: underline;
     }
+  }
 
-    .title {
-        grid-area: title;
-        justify-self: center;
-        align-self: end;
-        
-        h1 {
-            text-decoration: underline;
-        }
+  .about-text {
+    grid-area: text;
+    padding-top: 3.5em;
+
+    p {
+      font-weight: 200;
+      font-size: $desktop-paragraph-size;
+      line-height: 3rem;
     }
+  }
 
-    .about-text {
-        grid-area: text;
-        padding-top: 3.5em;
+  .memoji {
+    grid-area: image;
+    justify-self: end;
 
-        p {
-            font-weight: 200;
-            font-size: $desktop-paragraph-size;
-            line-height: 3rem;
-        }
+    img {
+      width: 375px;
+      height: 496px;
+      padding: 0;
     }
-
-    .memoji {
-        grid-area: image;
-        justify-self: end;
-
-        img {
-            width: 375px;
-            height: 496px;
-            padding: 0;
-        }
-    }
+  }
 }
 
 .work {
-    position: relative;
-    height: 87vh;
-    width: 100%;
-    top: -3.2rem;
+  position: relative;
+  height: 87vh;
+  width: 100%;
+  top: -3.2rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .8fr 3fr;
-    grid-template-areas: 
-        "title title title"
-        "card1 card2 card3";
-    gap: 1em 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 3fr;
+  grid-template-areas:
+    "title title title"
+    "card1 card2 card3";
+  gap: 1em 3em;
 
-    .title {
-        grid-area: title;
-        justify-self: center;
-        align-self: end;
-        
-        h1 {
-            text-decoration: underline;
-        }
+  .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: end;
+
+    h1 {
+      text-decoration: underline;
+    }
+  }
+
+  .card {
+    width: 700px;
+    height: 521px;
+    box-shadow: 0px 2px 10px #40798ccc;
+    border-radius: 5px;
+    padding: 0;
+    justify-self: center;
+
+    img {
+      border-radius: 5px;
     }
 
-    .card {
-        width: 700px;
-        height: 521px;
-        box-shadow: 0px 2px 10px #40798CCC;
-        border-radius: 5px;
-        padding: 0;
-        justify-self: center;
+    .card-body {
+      padding-top: 2px;
+      text-align: center;
 
-        img {
-            border-radius: 5px;
-        }
+      h5 {
+        font-size: $desktop-paragraph-size;
+        line-height: 70px;
+        margin: 0;
+      }
 
-        .card-body {
-            padding-top: 2px;
-            text-align: center;
-    
-            h5 {
-                font-size: $desktop-paragraph-size;
-                line-height: 70px;
-                margin: 0;
-            }
-            
-            .card-text {
-                font-size: 1rem;
-                line-height: 27px;
-            }
-        }
+      .card-text {
+        font-size: 1rem;
+        line-height: 27px;
+      }
     }
+  }
 
-    .card1 {
-        grid-area: card1;
-    }
+  .card1 {
+    grid-area: card1;
+  }
 
-    .card2 {
-        grid-area: card2;
-    }
+  .card2 {
+    grid-area: card2;
+  }
 
-    .card3 {
-        grid-area: card3;
-    }
+  .card3 {
+    grid-area: card3;
+  }
 }
 
 .skills {
-    position: relative;
-    height: 85vh;
-    width: 100%;
-    top: -3.2rem;
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  top: -3.2rem;
 
-    display: grid;
-    grid-template-columns: .8fr 1fr 1fr 1fr .8fr;
-    grid-template-rows: .5fr 125px 125px 125px 125px;
-    grid-template-areas: 
-        "... title title title ..."
-        "... icons text1 memoji ..."
-        "... bootstrap text2 memoji ..."
-        "... drupal text3 memoji ..."
-        "... adobe text4 memoji ...";
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr 0.8fr;
+  grid-template-rows: 0.5fr 125px 125px 125px 125px;
+  grid-template-areas:
+    "... title title title ..."
+    "... icons text1 memoji ..."
+    "... bootstrap text2 memoji ..."
+    "... drupal text3 memoji ..."
+    "... adobe text4 memoji ...";
 
-    .title {
-        grid-area: title;
-        justify-self: center;
-        align-self: start;
-        
-        h1 {
-            text-decoration: underline;
-        }
+  .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: start;
+
+    h1 {
+      text-decoration: underline;
     }
-    
-    .webdev-icons {
-        grid-area: icons;
-        justify-self: center;
-        align-self: center;
+  }
+
+  .webdev-icons {
+    grid-area: icons;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .webdev-text {
+    grid-area: text1;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .fa-bootstrap {
+    grid-area: bootstrap;
+    justify-self: center;
+    align-self: center;
+    padding-right: 3.125rem;
+  }
+
+  .bootstrap-text {
+    grid-area: text2;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .fa-drupal {
+    grid-area: drupal;
+    justify-self: center;
+    align-self: center;
+    padding-right: 3.125rem;
+  }
+
+  .drupal-text {
+    grid-area: text3;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .iconify {
+    grid-area: adobe;
+    justify-self: center;
+    align-self: center;
+    padding-right: 3.125rem;
+  }
+
+  .adobe-text {
+    grid-area: text4;
+    justify-self: center;
+    align-self: center;
+  }
+
+  i,
+  svg {
+    font-size: 5.5em;
+    padding: 0 6px 0 6px;
+  }
+
+  p {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 76px;
+  }
+
+  .memoji {
+    grid-area: memoji;
+    justify-self: center;
+    align-self: center;
+
+    img {
+      width: 421px;
+      height: 421px;
     }
-
-    .webdev-text {
-        grid-area: text1;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .fa-bootstrap {
-        grid-area: bootstrap;
-        justify-self: center;
-        align-self: center;
-        padding-right: 3.125rem;
-    }
-
-    .bootstrap-text {
-        grid-area: text2;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .fa-drupal {
-        grid-area: drupal;
-        justify-self: center;
-        align-self: center;
-        padding-right: 3.125rem;
-    }
-
-    .drupal-text {
-        grid-area: text3;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .iconify {
-        grid-area: adobe;
-        justify-self: center;
-        align-self: center;
-        padding-right: 3.125rem;
-    }
-
-    .adobe-text {
-        grid-area: text4;
-        justify-self: center;
-        align-self: center;
-    }
-
-    i , svg {
-        font-size: 5.5em;
-        padding: 0 6px 0 6px;
-    }
-
-
-    p {
-        font-size: 50px;
-        font-weight: 200;
-        line-height: 76px;
-    }
-
-    .memoji {
-        grid-area: memoji;
-        justify-self: center;
-        align-self: center;
-
-        img {
-            width: 421px;
-            height: 421px;
-        }
-    }
+  }
 }
 
 .contact {
-    position: relative;
-    height: 880px;
-    width: 100%;
+  position: relative;
+  height: 880px;
+  width: 100%;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .5fr 4fr .5fr;
-    grid-template-areas: 
-        "title"
-        "form"
-        "icons";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+  grid-template-areas:
+    "title"
+    "form"
+    "icons";
 
-    .title {
-        grid-area: title;
-        justify-self: center;
-        align-self: end;
-        
-        h1 {
-            text-decoration: underline;
-        }
+  .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: end;
+
+    h1 {
+      text-decoration: underline;
     }
+  }
 
-    .container {
-        grid-area: form;
-        justify-self: center;
+  .container {
+    grid-area: form;
+    justify-self: center;
 
-        form {
-            .form-control {
-                font-family: "Poppins", sans-serif;
-                font-size: 25px;
-            }
-            
-            input, textarea {
-                width: 621px;
-                margin-bottom: 1rem;
-            }
+    form {
+      .form-control {
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+      }
 
-            input {
-                height: 50px;
-            }
-            
-            @-webkit-keyframes btn {
-                25% {
-                    -webkit-transform: scale(1.03);
-                    transform: scale(1.03);
-                }
-                75% {
-                    -webkit-transform: scale(0.97);
-                    transform: scale(0.97);
-                }
-            }
-            @keyframes btn {
-                25% {
-                    -webkit-transform: scale(1.03);
-                    transform: scale(1.03);
-                }
-                75% {
-                    -webkit-transform: scale(0.97);
-                    transform: scale(0.97);
-                }
-            }
+      input,
+      textarea {
+        width: 621px;
+        margin-bottom: 1rem;
+      }
 
-            button {
-                display: block;
-                margin: 0 auto;
-                background-color: $light-theme-text;
-                color: $light-theme-bg;
-                border: none;
-                border-radius: 48px;
-                font-size: 1.5rem;
-                line-height: 48px;
-                padding: 5px 15px;
-                -webkit-transform: perspective(1px) translateZ(0);
-                transform: perspective(1px) translateZ(0);
-                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            }
-            button:hover, button:focus, button:active {
-                -webkit-animation-name: btn;
-                animation-name: btn;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-timing-function: linear;
-                animation-timing-function: linear;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-            }
+      input {
+        height: 50px;
+      }
+
+      @-webkit-keyframes btn {
+        25% {
+          -webkit-transform: scale(1.03);
+          transform: scale(1.03);
         }
-    }
+        75% {
+          -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+        }
+      }
+      @keyframes btn {
+        25% {
+          -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+        }
+        75% {
+          -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+        }
+      }
 
-    .icons {
-        grid-area: icons;
-        justify-self: center;
-        align-self: center;
-
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: $light-theme-text;
+        color: $light-theme-bg;
+        border: none;
+        border-radius: 48px;
+        font-size: 1.5rem;
+        line-height: 48px;
+        padding: 5px 15px;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        
-        a, :visited, :hover, :focus {
-            color: $light-theme-text;
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-        }
-
-        i {
-            font-size: 5em;
-            padding: 0 6px 0 6px;
-        }
+      }
+      button:hover,
+      button:focus,
+      button:active {
+        -webkit-animation-name: btn;
+        animation-name: btn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+      }
     }
+  }
+
+  .icons {
+    grid-area: icons;
+    justify-self: center;
+    align-self: center;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+
+    a,
+    :visited,
+    :hover,
+    :focus {
+      color: $light-theme-text;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    i {
+      font-size: 5em;
+      padding: 0 6px 0 6px;
+    }
+  }
 }
