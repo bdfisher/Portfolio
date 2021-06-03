@@ -4,11 +4,13 @@ body {
   background-color: #f6f5f5;
   overflow-x: hidden;
   color: #40798c;
+  margin: 0;
+  padding: 0;
 }
 
 body h1 {
   font-weight: 400;
-  font-size: 4.0625rem;
+  font-size: 4.06rem;
   line-height: 6.125rem;
   text-align: left;
   letter-spacing: 0px;
@@ -17,7 +19,10 @@ body h1 {
 body .indicator {
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: 55px;
   width: 30px;
   height: 30px;
   -webkit-transform: rotate(45deg);
@@ -89,20 +94,65 @@ body .bottom-left {
 
 .hero-section {
   position: relative;
-  height: 1080px;
+  height: 100vh;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 0.2fr;
+      grid-template-columns: 2fr 1fr 0.2fr;
+  -ms-grid-rows: .2fr 4fr 2fr;
+      grid-template-rows: .2fr 4fr 2fr;
+      grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
 }
 
-.hero-section svg {
-  position: absolute;
-  bottom: 0;
+.hero-section .hero-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.hero-section .hero-image {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: image;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.hero-section .wave {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: wave;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-bottom: -0.625em;
+}
+
+.hero-section .wave svg {
   width: 101vw;
-  z-index: -1;
+}
+
+.hero-section .toggle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: toggle;
+  padding-top: 1rem;
+}
+
+.hero-section .toggle i {
+  font-size: 27px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  color: #22223b;
 }
 
 .hero-section h1 {
-  margin-top: 15.8125rem;
-  margin-left: 12.375rem;
   text-shadow: 0.5px 0.5px #707070;
 }
 
@@ -113,9 +163,6 @@ body .bottom-left {
 .hero-section img {
   height: 421px;
   width: 421px;
-  padding-left: 21px;
-  margin-top: 11.625rem;
-  margin-right: 17rem;
 }
 
 @-webkit-keyframes animate {
@@ -154,33 +201,54 @@ body .bottom-left {
 
 .about-me {
   position: relative;
-  height: 1080px;
+  height: 90vh;
   width: 100%;
-}
-
-.about-me h1 {
-  text-decoration: underline;
-  padding-top: 120px;
+  top: -3.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .8fr 2fr 1fr .8fr;
+      grid-template-columns: .8fr 2fr 1fr .8fr;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+      grid-template-areas: "... title title ..." "... text image ...";
 }
 
 .about-me svg {
   z-index: -1;
 }
 
-.about-me .row {
-  width: 100%;
-  padding-top: 3.375rem;
+.about-me .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.about-me .title h1 {
+  text-decoration: underline;
 }
 
 .about-me .about-text {
-  margin-right: 11.625rem;
-  margin-left: 26.43rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text;
+  padding-top: 3.5em;
 }
 
 .about-me .about-text p {
   font-weight: 200;
   font-size: 2rem;
   line-height: 3rem;
+}
+
+.about-me .memoji {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: image;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .about-me .memoji img {
@@ -191,112 +259,263 @@ body .bottom-left {
 
 .work {
   position: relative;
-  height: 1080px;
+  height: 87vh;
   width: 100%;
+  top: -3.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: .8fr 3fr;
+      grid-template-rows: .8fr 3fr;
+      grid-template-areas: "title title title" "card1 card2 card3";
+  gap: 1em 3em;
 }
 
-.work h1 {
+.work .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.work .title h1 {
   text-decoration: underline;
-  padding-top: 120px;
 }
 
-.work .card-group {
-  margin: 51px 20px 0 20px;
-}
-
-.work .card-group .card {
-  width: 581px;
+.work .card {
+  width: 700px;
   height: 521px;
   -webkit-box-shadow: 0px 2px 10px #40798CCC;
           box-shadow: 0px 2px 10px #40798CCC;
+  border-radius: 5px;
   padding: 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.work .card-group .middle-card {
-  margin: 0 50px 0 50px;
+.work .card img {
+  border-radius: 5px;
 }
 
-.work .card-group .card-body {
-  padding-top: 5px;
+.work .card .card-body {
+  padding-top: 2px;
+  text-align: center;
 }
 
-.work .card-group .card-body h5 {
+.work .card .card-body h5 {
   font-size: 2rem;
   line-height: 70px;
+  margin: 0;
 }
 
-.work .card-group .card-body .card-text {
+.work .card .card-body .card-text {
   font-size: 1rem;
   line-height: 27px;
 }
 
+.work .card1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+.work .card2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card2;
+}
+
+.work .card3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: card3;
+}
+
 .skills {
   position: relative;
-  height: 1080px;
+  height: 85vh;
   width: 100%;
+  top: -3.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .8fr 1fr 1fr 1fr .8fr;
+      grid-template-columns: .8fr 1fr 1fr 1fr .8fr;
+  -ms-grid-rows: .5fr 125px 125px 125px 125px;
+      grid-template-rows: .5fr 125px 125px 125px 125px;
+      grid-template-areas: "... title title title ..." "... icons text1 memoji ..." "... bootstrap text2 memoji ..." "... drupal text3 memoji ..." "... adobe text4 memoji ...";
 }
 
-.skills h1 {
+.skills .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+
+.skills .title h1 {
   text-decoration: underline;
-  padding-top: 120px;
 }
 
-.skills .row {
-  height: 125px;
+.skills .webdev-icons {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icons;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.skills .row i, .skills .row svg {
-  font-size: 88px;
+.skills .webdev-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: text1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.skills .fa-bootstrap {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: bootstrap;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 3.125rem;
+}
+
+.skills .bootstrap-text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: text2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.skills .fa-drupal {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: drupal;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 3.125rem;
+}
+
+.skills .drupal-text {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: text3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.skills .iconify {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: adobe;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 3.125rem;
+}
+
+.skills .adobe-text {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: text4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.skills i, .skills svg {
+  font-size: 5.5em;
   padding: 0 6px 0 6px;
 }
 
-.skills .row .icons {
-  margin: 0 125px 0 125px;
-}
-
-.skills .col-4 {
-  margin-top: 91px;
-  margin-bottom: 5rem;
-}
-
-.skills .col-4 p {
+.skills p {
   font-size: 50px;
   font-weight: 200;
   line-height: 76px;
 }
 
+.skills .memoji {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: memoji;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .skills .memoji img {
   width: 421px;
   height: 421px;
-  padding: 0;
-  margin-top: 100px;
 }
 
 .contact {
   position: relative;
   height: 880px;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: .5fr 4fr .5fr;
+      grid-template-rows: .5fr 4fr .5fr;
+      grid-template-areas: "title" "form" "icons";
 }
 
-.contact h1 {
+.contact .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.contact .title h1 {
   text-decoration: underline;
-  padding-top: 120px;
 }
 
 .contact .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 65px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: form;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .contact .container form .form-control {
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
 }
 
@@ -309,17 +528,85 @@ body .bottom-left {
   height: 50px;
 }
 
+@-webkit-keyframes btn {
+  25% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  75% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+}
+
+@keyframes btn {
+  25% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  75% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+}
+
 .contact .container form button {
+  display: block;
+  margin: 0 auto;
   background-color: #40798c;
   color: #f6f5f5;
+  border: none;
   border-radius: 48px;
   font-size: 1.5rem;
   line-height: 48px;
-  padding: 10px 30px;
-  margin-left: 200px;
+  padding: 5px 15px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.contact .container form .btn:hover {
-  background-color: #ef3e36;
+.contact .container form button:hover, .contact .container form button:focus, .contact .container form button:active {
+  -webkit-animation-name: btn;
+  animation-name: btn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.contact .icons {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icons;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.contact .icons a, .contact .icons :visited, .contact .icons :hover, .contact .icons :focus {
+  color: #40798c;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contact .icons i {
+  font-size: 5em;
+  padding: 0 6px 0 6px;
 }
 /*# sourceMappingURL=main.css.map */
