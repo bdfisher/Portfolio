@@ -5,9 +5,9 @@
 
 h1 {
   font-weight: 400;
-  font-size: $desktop-heading-size;
-  line-height: 6.125rem;
-  text-align: left;
+  font-size: $mobile-heading-size;
+  line-height: 4.375rem;
+  text-align: center;
   letter-spacing: 0px;
 }
 
@@ -28,57 +28,38 @@ h1 {
   height: 100vh;
   width: 100%;
 
-  display: grid;
-  grid-template-columns: 2fr 1fr 0.2fr;
-  grid-template-rows: 0.2fr 4fr 2fr;
-  grid-template-areas:
-    "... ... toggle"
-    "text image ..."
-    "wave wave wave";
-
-  .hero-text {
-    grid-area: text;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .hero-image {
-    grid-area: image;
-    justify-self: center;
-    align-self: center;
-  }
-
   .wave {
-    grid-area: wave;
-    align-self: end;
     margin-bottom: -0.625em;
 
     svg {
-      width: 101vw;
+      width: 100vw;
+      height: 100px;
     }
   }
 
   .toggle {
-    grid-area: toggle;
-    padding-top: 1rem;
-    i {
-      font-size: 27px;
-      transform: rotate(-20deg);
-      color: $dark-theme-bg;
-    }
+    display: none;
   }
 
   h1 {
     text-shadow: 0.5px 0.5px $text-border;
 
-    span {
+    p {
       font-weight: 200;
+      font-size: 2.19rem;
+      line-height: 3.3125rem;
+      text-align: left;
+      width: 300px;
+      margin: 0 auto;
     }
   }
 
-  img {
-    height: 421px;
-    width: 421px;
+  .hero-image {
+    text-align: center;
+    img {
+      height: 226px;
+      width: 226px;
+    }
   }
 
   @keyframes animate {
@@ -99,49 +80,39 @@ h1 {
 
 .about-me {
   position: relative;
-  height: 90vh;
+  height: 110vh;
   width: 100%;
-  top: -3.2rem;
-
-  display: grid;
-  grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
-  grid-template-rows: 1fr 3fr;
-  grid-template-areas:
-    "... title title ..."
-    "... text image ...";
+  top: -4.3rem;
 
   svg {
     z-index: -1;
+    height: 150px;
+    width: 150px;
   }
 
   .title {
-    grid-area: title;
-    justify-self: center;
-    align-self: end;
-
     h1 {
       text-decoration: underline;
+      padding-top: 1em;
     }
   }
 
   .about-text {
-    grid-area: text;
-    padding-top: 3.5em;
-
     p {
       font-weight: 200;
-      font-size: $desktop-paragraph-size;
-      line-height: 3rem;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: left;
+      width: 340px;
+      margin: 0 auto;
     }
   }
 
   .memoji {
-    grid-area: image;
-    justify-self: end;
-
+    text-align: center;
     img {
-      width: 375px;
-      height: 496px;
+      width: 201.3px;
+      height: 266.25px;
       padding: 0;
     }
   }
@@ -149,289 +120,166 @@ h1 {
 
 .work {
   position: relative;
-  height: 87vh;
+  height: 150vh;
   width: 100%;
-  top: -3.2rem;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 3fr;
-  grid-template-areas:
-    "title title title"
-    "card1 card2 card3";
-  gap: 1em 3em;
+  top: -4.6rem;
 
   .title {
-    grid-area: title;
-    justify-self: center;
-    align-self: end;
-
     h1 {
       text-decoration: underline;
     }
   }
 
   .card {
-    width: 700px;
-    height: 521px;
+    width: 300px;
+    height: 290px;
     box-shadow: 0px 2px 10px #40798ccc;
     border-radius: 5px;
     padding: 0;
-    justify-self: center;
+    display: block;
+    margin: 0 auto 20px auto;
 
     img {
       border-radius: 5px;
     }
 
     .card-body {
-      padding-top: 2px;
+      padding-top: 1px;
       text-align: center;
 
       h5 {
-        font-size: $desktop-paragraph-size;
-        line-height: 70px;
+        font-size: 1.2rem;
+        line-height: 3rem;
         margin: 0;
       }
 
       .card-text {
-        font-size: 1rem;
-        line-height: 27px;
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: 200;
+        line-height: 21px;
       }
     }
-  }
-
-  .card1 {
-    grid-area: card1;
-  }
-
-  .card2 {
-    grid-area: card2;
-  }
-
-  .card3 {
-    grid-area: card3;
   }
 }
 
 .skills {
   position: relative;
-  height: 85vh;
+  height: 120vh;
   width: 100%;
   top: -3.2rem;
 
-  display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr 1fr 0.8fr;
-  grid-template-rows: 0.5fr 125px 125px 125px 125px;
-  grid-template-areas:
-    "... title title title ..."
-    "... icons text1 memoji ..."
-    "... bootstrap text2 memoji ..."
-    "... drupal text3 memoji ..."
-    "... adobe text4 memoji ...";
-
   .title {
-    grid-area: title;
-    justify-self: center;
-    align-self: start;
-
     h1 {
       text-decoration: underline;
+      padding-top: 1em;
     }
   }
 
+  svg.top-right,
+  svg.bottom-left {
+    height: 150px;
+    width: 150px;
+  }
+
   .webdev-icons {
-    grid-area: icons;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .webdev-text {
-    grid-area: text1;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .fa-bootstrap {
-    grid-area: bootstrap;
-    justify-self: center;
-    align-self: center;
-    padding-right: 3.125rem;
-  }
-
-  .bootstrap-text {
-    grid-area: text2;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .fa-drupal {
-    grid-area: drupal;
-    justify-self: center;
-    align-self: center;
-    padding-right: 3.125rem;
-  }
-
-  .drupal-text {
-    grid-area: text3;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .iconify {
-    grid-area: adobe;
-    justify-self: center;
-    align-self: center;
-    padding-right: 3.125rem;
-  }
-
-  .adobe-text {
-    grid-area: text4;
-    justify-self: center;
-    align-self: center;
+    text-align: center;
+    margin: 0;
   }
 
   i,
-  svg {
-    font-size: 5.5em;
-    padding: 0 6px 0 6px;
+  svg[data-icon="simple-icons:adobexd"] {
+    font-size: 35px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0;
+  }
+
+  .center,
+  svg[data-icon="simple-icons:adobexd"] {
+    text-align: center;
+    width: 100%;
   }
 
   p {
-    font-size: 50px;
+    text-align: center;
+    font-size: $mobile-skills-size;
     font-weight: 200;
-    line-height: 76px;
+    line-height: 3rem;
+    margin: 3px 0;
   }
 
   .memoji {
-    grid-area: memoji;
-    justify-self: center;
-    align-self: center;
+    text-align: center;
 
     img {
-      width: 421px;
-      height: 421px;
+      width: 226px;
+      height: 226px;
     }
   }
 }
 
 .contact {
   position: relative;
-  height: 880px;
+  height: 78vh;
   width: 100%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 4fr 0.5fr;
-  grid-template-areas:
-    "title"
-    "form"
-    "icons";
+  top: -3.2rem;
 
   .title {
-    grid-area: title;
-    justify-self: center;
-    align-self: end;
-
     h1 {
       text-decoration: underline;
+      margin-bottom: 30px;
     }
   }
 
   .container {
-    grid-area: form;
-    justify-self: center;
-
     form {
+      text-align: center;
+
       .form-control {
         font-family: "Poppins", sans-serif;
-        font-size: 25px;
+        font-size: 20px;
       }
 
       input,
       textarea {
-        width: 621px;
+        width: 253px;
         margin-bottom: 1rem;
+        border-radius: 3px;
+        border-style: none;
       }
 
       input {
         height: 50px;
       }
 
-      @-webkit-keyframes btn {
-        25% {
-          -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-        }
-        75% {
-          -webkit-transform: scale(0.97);
-          transform: scale(0.97);
-        }
-      }
-      @keyframes btn {
-        25% {
-          -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-        }
-        75% {
-          -webkit-transform: scale(0.97);
-          transform: scale(0.97);
-        }
-      }
-
       button {
         display: block;
         margin: 0 auto;
-        background-color: $light-theme-text;
-        color: $light-theme-bg;
+        background-color: $dark-theme-text;
+        color: $accent;
         border: none;
         border-radius: 48px;
-        font-size: 1.5rem;
-        line-height: 48px;
+        width: 223px;
+        font-size: 20px;
+        line-height: 30px;
         padding: 5px 15px;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      }
-      button:hover,
-      button:focus,
-      button:active {
-        -webkit-animation-name: btn;
-        animation-name: btn;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
       }
     }
   }
 
   .icons {
-    grid-area: icons;
-    justify-self: center;
-    align-self: center;
-
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-
+    text-align: center;
     a,
     :visited,
     :hover,
     :focus {
-      color: $light-theme-text;
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+      color: $dark-theme-text;
     }
 
     i {
-      font-size: 5em;
-      padding: 0 6px 0 6px;
+      font-size: 35px;
+      padding: 20px 20px 0 20px;
     }
   }
 }
