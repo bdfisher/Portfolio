@@ -76,10 +76,11 @@ h1 {
 
 .hero-section .wave {
   margin-bottom: -0.625em;
+  width: 100vw;
 }
 
 .hero-section .wave svg {
-  width: 100vw;
+  width: 100%;
   height: 100px;
 }
 
