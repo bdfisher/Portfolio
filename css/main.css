@@ -75,13 +75,11 @@ h1 {
 }
 
 .hero-section .wave {
-  margin-bottom: -0.625em;
   width: 100vw;
 }
 
 .hero-section .wave svg {
   width: 100%;
-  height: 100px;
 }
 
 .hero-section .toggle {
@@ -144,6 +142,81 @@ h1 {
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .hero-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 0.2fr 2fr 1fr;
+        grid-template-rows: 0.2fr 2fr 1fr;
+        grid-template-areas: "... toggle" "text memoji" "wave wave";
+  }
+  .hero-section .toggle {
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: toggle;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    padding-right: 3em;
+  }
+  .hero-section .indicator-mobile {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: wave;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .hero-section .hero-text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: text;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 4.06rem;
+    text-align: left;
+  }
+  .hero-section .hero-text h1 p {
+    font-size: 2.75rem;
+    width: 400px;
+    margin: 0;
+  }
+  .hero-section .hero-image {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: memoji;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .hero-section .hero-image img {
+    height: 298px;
+    width: 298px;
+  }
+  .hero-section .wave {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: wave;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .about-me {
   width: 100%;
 }
@@ -172,6 +245,20 @@ h1 {
   width: 201.3px;
   height: 266.25px;
   padding: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-me .title h1 {
+    font-size: 3.125rem;
+    margin-top: .5em;
+  }
+  .about-me .about-text p {
+    font-size: 1.875rem;
+  }
+  .about-me .memoji img {
+    width: 245.44px;
+    height: 331.09px;
+  }
 }
 
 .work {
@@ -217,6 +304,52 @@ h1 {
   line-height: 21px;
 }
 
+@media only screen and (min-width: 915px) {
+  .work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+        grid-template-areas: "title title title" "card1 card2 card3";
+    gap: 0 1em;
+  }
+  .work .title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: title;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .work .title h1 {
+    font-size: 3.125rem;
+  }
+  .work .card {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .work .card1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: card1;
+  }
+  .work .card2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: card2;
+  }
+  .work .card3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: card3;
+  }
+}
+
 .skills {
   width: 100%;
 }
@@ -251,7 +384,6 @@ h1 {
   text-align: center;
   font-size: 1.56rem;
   font-weight: 200;
-  line-height: 3rem;
   margin: 3px 0;
 }
 
@@ -262,6 +394,142 @@ h1 {
 .skills .memoji img {
   width: 226px;
   height: 226px;
+}
+
+@media only screen and (min-width: 700px) {
+  .skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .2fr 1fr 1fr .2fr;
+        grid-template-columns: .2fr 1fr 1fr .2fr;
+    -ms-grid-rows: .5fr .3fr .3fr .3fr .3fr 1fr;
+        grid-template-rows: .5fr .3fr .3fr .3fr .3fr 1fr;
+        grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal adobe ..." "... drupaltxt adobetxt ..." "... memoji memoji ...";
+  }
+  .skills .title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills .title h1 {
+    font-size: 3.125rem;
+  }
+  .skills .webdev-icons {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: webdev;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills .webdev-text {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: webtxt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .skills .fa-bootstrap {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: bootstrap;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills .bootstrap-text {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: boottext;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .skills .fa-drupal {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: drupal;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills .drupal-text {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: drupaltxt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .skills .iconify {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: adobe;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills .adobe-text {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    grid-area: adobetxt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .skills i,
+  .skills svg[data-icon="simple-icons:adobexd"] {
+    font-size: 60px;
+  }
+  .skills p {
+    font-size: 2.19rem;
+    margin: 10px 0;
+  }
+  .skills .memoji {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: memoji;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills .memoji img {
+    width: 264px;
+    height: 264px;
+  }
+}
+
+@media only screen and (min-width: 915px) {
+  .skills .memoji img {
+    width: 284px;
+    height: 284px;
+  }
 }
 
 .contact {
@@ -329,5 +597,44 @@ h1 {
 .contact .icons i {
   font-size: 40px;
   padding: 20px 20px 0 20px;
+}
+
+@media only screen and (min-width: 700px) {
+  .contact .contact-bg {
+    -webkit-clip-path: circle(73% at 50% 84%);
+            clip-path: circle(73% at 50% 84%);
+  }
+  .contact .title {
+    text-align: center;
+  }
+  .contact .title h1 {
+    font-size: 3.125rem;
+    padding-top: 2em;
+  }
+  .contact .container form .form-control {
+    font-size: 25px;
+  }
+  .contact .container form input,
+  .contact .container form textarea {
+    width: 375px;
+  }
+  .contact .container form input {
+    height: 70px;
+  }
+  .contact .container form button {
+    width: 323px;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .contact .icons i {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (min-width: 915px) {
+  .contact .contact-bg {
+    -webkit-clip-path: circle(65% at 50% 84%);
+            clip-path: circle(65% at 50% 84%);
+  }
 }
 /*# sourceMappingURL=main.css.map */

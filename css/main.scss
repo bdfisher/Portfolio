@@ -16,12 +16,10 @@ h1 {
   width: 100%;
 
   .wave {
-    margin-bottom: -0.625em;
     width: 100vw;
 
     svg {
       width: 100%;
-      height: 100px;
     }
   }
 
@@ -44,6 +42,7 @@ h1 {
 
   .hero-image {
     text-align: center;
+
     img {
       height: 226px;
       width: 226px;
@@ -55,13 +54,71 @@ h1 {
       border-color: $dark-theme-bg;
       transform: translate(0, 0);
     }
+
     20% {
       border-color: $dark-theme-bg;
       transform: translate(15px, 15px);
     }
+
     20.1%,
     100% {
       border-color: $accent;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr 2fr 1fr;
+    grid-template-areas:
+      "... toggle"
+      "text memoji"
+      "wave wave";
+
+    .toggle {
+      display: block;
+      grid-area: toggle;
+      align-self: center;
+      justify-self: end;
+      padding-right: 3em;
+    }
+
+    .indicator-mobile {
+      grid-area: wave;
+      align-self: end;
+    }
+
+    .hero-text {
+      grid-area: text;
+      align-self: center;
+      justify-self: center;
+
+      h1 {
+        font-size: 4.06rem;
+        text-align: left;
+
+        p {
+          font-size: $tablet-heading-size;
+          width: 400px;
+          margin: 0;
+        }
+      }
+    }
+
+    .hero-image {
+      grid-area: memoji;
+      align-self: center;
+      justify-self: center;
+
+      img {
+        height: 298px;
+        width: 298px;
+      }
+    }
+
+    .wave {
+      grid-area: wave;
+      align-self: center;
     }
   }
 }
@@ -90,10 +147,33 @@ h1 {
 
   .memoji {
     text-align: center;
+
     img {
       width: 201.3px;
       height: 266.25px;
       padding: 0;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    .title {
+      h1 {
+        font-size: 3.125rem;
+        margin-top: .5em;
+      }
+    }
+
+    .about-text {
+      p {
+        font-size: $tablet-paragraph-size;
+      }
+    }
+
+    .memoji {
+      img {
+        width: 245.44px;
+        height: 331.09px;
+      }
     }
   }
 }
@@ -139,6 +219,42 @@ h1 {
       }
     }
   }
+
+  @media only screen and (min-width: 915px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+      "title title title"
+      "card1 card2 card3";
+    gap: 0 1em;
+    
+    .title {
+      grid-area: title;
+      justify-self: center;
+      align-self: center;
+
+      h1 {
+        font-size: 3.125rem;
+      }
+    }
+
+    .card {
+      justify-self: center;
+    }
+
+    .card1 {
+      grid-area: card1;
+    }
+
+    .card2 {
+      grid-area: card2;
+    }
+
+    .card3 {
+      grid-area: card3;
+    }
+  }
 }
 
 .skills {
@@ -175,7 +291,6 @@ h1 {
     text-align: center;
     font-size: $mobile-skills-size;
     font-weight: 200;
-    line-height: 3rem;
     margin: 3px 0;
   }
 
@@ -187,6 +302,107 @@ h1 {
       height: 226px;
     }
   }
+
+  @media only screen and (min-width: 700px) {
+    display: grid;
+    grid-template-columns: .2fr 1fr 1fr .2fr;
+    grid-template-rows: .5fr .3fr .3fr .3fr .3fr 1fr;
+    grid-template-areas:
+      "... title title ..."
+      "... webdev bootstrap ..."
+      "... webtxt boottext ..."
+      "... drupal adobe ..."
+      "... drupaltxt adobetxt ..."
+      "... memoji memoji ...";
+
+    .title {
+      grid-area: title;
+      justify-self: center;
+      align-self: center;
+
+      h1 {
+        font-size: 3.125rem;
+      }
+    }
+
+    .webdev-icons {
+      grid-area: webdev;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .webdev-text {
+      grid-area: webtxt;
+      justify-self: center;
+      align-self: start;
+    }
+
+    .fa-bootstrap {
+      grid-area: bootstrap;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .bootstrap-text {
+      grid-area: boottext;
+      justify-self: center;
+      align-self: start;
+    }
+
+    .fa-drupal {
+      grid-area: drupal;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .drupal-text {
+      grid-area: drupaltxt;
+      justify-self: center;
+      align-self: start;
+    }
+
+    .iconify {
+      grid-area: adobe;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .adobe-text {
+      grid-area: adobetxt;
+      justify-self: center;
+      align-self: start;
+    }
+
+    i,
+    svg[data-icon="simple-icons:adobexd"] {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: $tablet-skills-size;
+      margin: 10px 0;
+    }
+
+    .memoji {
+      grid-area: memoji;
+      justify-self: center;
+      align-self: center;
+
+      img {
+        width: 264px;
+        height: 264px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 915px) {
+    .memoji {
+      img {
+        width: 284px;
+        height: 284px;
+      }
+    }
+  }
 }
 
 .contact {
@@ -196,7 +412,7 @@ h1 {
     background: $accent;
     clip-path: circle(85% at 50% 84%);
   }
-  
+
 
   .title {
     h1 {
@@ -245,6 +461,7 @@ h1 {
 
   .icons {
     text-align: center;
+
     a,
     :visited,
     :hover,
@@ -255,6 +472,56 @@ h1 {
     i {
       font-size: 40px;
       padding: 20px 20px 0 20px;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    .contact-bg {
+      clip-path: circle(73% at 50% 84%);
+    }
+
+    .title {
+      text-align: center;
+
+      h1 {
+        font-size: 3.125rem;
+        padding-top: 2em;
+      }
+    }
+
+    .container {
+      form {
+        .form-control {
+          font-size: 25px;
+        }
+
+        input,
+        textarea {
+          width: 375px;
+        }
+
+        input {
+          height: 70px;
+        }
+
+        button {
+          width: 323px;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+    }
+
+    .icons {
+      i {
+        font-size: 65px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 915px) {
+    .contact-bg {
+      clip-path: circle(65% at 50% 84%);
     }
   }
 }
