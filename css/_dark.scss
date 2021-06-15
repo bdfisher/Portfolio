@@ -1,0 +1,28 @@
+@import "globals";
+@import "variables";
+@import "indicator";
+
+body.dark-theme {
+  color: $dark-theme-text;
+  background-color: $dark-theme-bg;
+
+  .hero-section {
+    .toggle {
+      i {
+        color: $dark-theme-text;
+      }
+    }
+  }
+
+  .contact {
+    .icons {
+
+      a,
+      :visited,
+      :hover,
+      :focus {
+        color: $dark-theme-text;
+      }
+    }
+  }
+}
