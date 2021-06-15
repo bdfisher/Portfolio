@@ -16,10 +16,11 @@ body.dark-theme {
 
   .contact {
     .icons {
+
       a,
       :visited,
       :hover,
-      :focus  {
+      :focus {
         color: $dark-theme-text;
       }
     }
