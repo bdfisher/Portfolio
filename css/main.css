@@ -252,13 +252,6 @@ body.dark-theme .hero-section .toggle i {
   color: #78e0dc;
 }
 
-body.dark-theme .contact .icons a,
-body.dark-theme .contact .icons :visited,
-body.dark-theme .contact .icons :hover,
-body.dark-theme .contact .icons :focus {
-  color: #78e0dc;
-}
-
 h1 {
   font-weight: 400;
   font-size: 3.125rem;
