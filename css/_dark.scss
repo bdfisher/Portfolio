@@ -13,4 +13,18 @@ body.dark-theme {
       }
     }
   }
+
+  .about-me {
+    .about-text {
+      .button-effect {
+        a {
+          background-color: $dark-theme-text;
+        }
+      }
+
+      .effect {
+        color: $dark-theme-bg;
+      }
+    }
+  }
 }
