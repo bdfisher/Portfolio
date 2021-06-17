@@ -728,6 +728,98 @@ h1 {
   padding: 0;
   display: block;
   margin: 0 auto 20px auto;
+  position: relative;
+}
+
+.work .card .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ef3e36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  /* effect-1 styles */
+}
+
+.work .card .image-overlay .button-effect {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.work .card .image-overlay .button-effect a {
+  font-size: 1.5rem;
+  background-color: #22223b;
+}
+
+.work .card .image-overlay .effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #ef3e36;
+  text-transform: capitalize;
+  padding: 10px 0px;
+  width: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.work .card .image-overlay .effect.effect-1 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.work .card .image-overlay .effect.effect-1:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 1rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.work .card .image-overlay .effect.effect-1:hover {
+  text-indent: -20px;
+}
+
+.work .card .image-overlay .effect.effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+
+.work .card .image-overlay:hover {
+  opacity: 1;
 }
 
 .work .card img {
@@ -887,12 +979,16 @@ h1 {
   margin: 0;
 }
 
-.skills i,
-.skills svg[data-icon="simple-icons:adobexd"] {
+.skills i {
   font-size: 35px;
   padding-left: 2px;
   padding-right: 2px;
   margin: 0;
+}
+
+.skills .iconify {
+  width: 35px;
+  height: 35px;
 }
 
 .skills .center,
@@ -1021,9 +1117,12 @@ h1 {
         -ms-grid-row-align: start;
         align-self: start;
   }
-  .skills i,
-  .skills svg[data-icon="simple-icons:adobexd"] {
+  .skills i {
     font-size: 60px;
+  }
+  .skills .iconify {
+    width: 60px;
+    height: 60px;
   }
   .skills p {
     font-size: 2.19rem;
@@ -1073,6 +1172,7 @@ h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    margin-top: 2em;
   }
   .skills .title h1 {
     margin: 0;
@@ -1165,9 +1265,12 @@ h1 {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .skills i,
-  .skills svg[data-icon="simple-icons:adobexd"] {
-    font-size: 5.5em;
+  .skills i {
+    font-size: 5.5rem;
+  }
+  .skills .iconify {
+    width: 5.5rem;
+    height: 5.5rem;
   }
   .skills p {
     font-size: 50px;
@@ -1286,7 +1389,8 @@ h1 {
     font-size: 2rem;
     line-height: 3rem;
   }
-  .contact .container form button:hover, .contact .container form button:focus {
+  .contact .container form button:hover,
+  .contact .container form button:focus {
     -webkit-animation-name: pulse;
             animation-name: pulse;
     -webkit-animation-duration: 1.25s;
