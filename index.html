@@ -24,10 +24,10 @@
   <link rel="stylesheet" href="css/main.css" />
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
 
   <title>Blake Fisher | Web Developer</title>
 </head>
@@ -42,7 +42,9 @@
       <h1>
         Hi, I'm Blake. <br />
         <p>
-          A front-end web developer.
+          Front-end web developer.
+          <br>
+          UI/UX designer.
         </p>
       </h1>
     </div>
@@ -99,7 +101,7 @@
     <div class="about-text">
       <p>
         Hi! My name is Blake Fisher and I am a front-end web developer and a student at Iowa State University.
-        I have a passion for designing and building beautiful and accessible websites.
+        I have a passion for designing and building beautiful and functional websites.
       </p>
       <div class="button-effect">
         <a class="effect effect-1" href="assets/Resume.pdf" title="Resume" target="blank">Resume</a>
@@ -119,19 +121,20 @@
       <img src="assets/images/work/iTrakz.png" alt="iTrakz Screenschot" />
       <div class="image-overlay">
         <div class="button-effect">
-          <a class="effect effect-1" href="#" title="Live Site" target="blank">Live Site</a>
-          <br>
+          <!-- <a class="effect effect-1" href="#" title="Live Site" target="blank">Live Site</a>
+          <br> -->
           <a class="effect effect-1" href="https://github.com/bdfisher/iTrakz" title="Github" target="blank">Github</a>
         </div>
       </div>
       <div class="card-body">
         <h5 class="card-title">iTrakz</h5>
         <p class="card-text">
-          This website is a full fledged issue tracker. You can submit tickets, modify tickets,
-          and resolve tickets. Everything will update on the page instantaneously.
+          Self-contained bug/issue tracking web application, designed to be used in small projects. 
+          Allows users to create, view, and edit support tickets.
           <br>
           <strong>Made with: HTML, CSS, JS, BetterSQlite3</strong>
         </p>
+        <a href="https://github.com/bdfisher/iTrakz" title="Github" target="blank" class="mobile-button">Github</a>
       </div>
     </div>
     <div class="card card2">
@@ -145,29 +148,31 @@
       <div class="card-body">
         <h5 class="card-title">Portfolio Website</h5>
         <p class="card-text">
-          This website is to show my work, skills, and tell the world about myself.
+          Portfolio site to showcase my work and skills. I will be continually
+          updating this website as I make more projects and develop new skills.
           <br>
           <strong>Made with: HTML, Sass, CSS Grid, JS</strong>
         </p>
+        <a href="https://github.com/bdfisher/Portfolio" title="Github" target="blank" class="mobile-button">Github</a>
       </div>
     </div>
     <div class="card card3">
-      <img src="https://via.placeholder.com/300x150" alt="..." />
+      <img src="assets/images/work/isu.png" alt="Iowa State Learning Communities" />
       <div class="image-overlay">
         <div class="button-effect">
-          <a class="effect effect-1" href="#" title="Live Site" target="blank">Live Site</a>
-          <br>
-          <a class="effect effect-1" href="#" title="Github" target="blank">Github</a>
+          <a class="effect effect-1" href="https://www.lc.iastate.edu/" title="Live Site" target="blank">Live Site</a>
         </div>
       </div>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">ISU Learning Communities</h5>
         <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero
-          illum saepe, error recusandae necessitatibus
+          Iowa State University's Learning Community Website. I have created many
+          of the pages on this site to adhere to the university's theme and attract
+          more students to ISU's Learning Communities.
           <br>
-          <strong>Made with: </strong>
+          <strong>Made with: Drupal 7, HTML, CSS, Bootstrap</strong>
         </p>
+        <a href="https://www.lc.iastate.edu/" title="Live Site" target="blank" class="mobile-button">Live Site</a>
       </div>
     </div>
   </section>
@@ -224,7 +229,9 @@
           <div class="form-group">
             <textarea placeholder="Your Message*" class="form-control" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <div class="button-effect">
+            <button type="submit" class="effect effect-1">Submit</button>
+          </div>
         </form>
       </div>
 
@@ -239,7 +246,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      delay: 350,
+      delay: 450,
     });
   </script>
   <script src="js/main.js"></script>

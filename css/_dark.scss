@@ -27,4 +27,15 @@ body.dark-theme {
       }
     }
   }
+
+  .work {
+    .card {
+      .card-body {
+        .mobile-button {
+          background: $dark-theme-text;
+          color: $dark-theme-bg;
+        }
+      }
+    }
+  }
 }

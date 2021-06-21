@@ -368,13 +368,23 @@ h1 {
 
     .memoji {
       grid-area: image;
-      justify-self: end;
+      justify-self: center;
       align-self: center;
 
       img {
         width: 375px;
         height: 496px;
         padding: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    margin-top: 8em;
+
+    .about-text {
+      p {
+        width: 65%;
       }
     }
   }
@@ -392,7 +402,7 @@ h1 {
 
   .card {
     width: 330px;
-    height: 320px;
+    height: 370px;
     box-shadow: 0px 2px 10px #40798ccc;
     border-radius: 5px;
     padding: 0;
@@ -401,78 +411,7 @@ h1 {
     position: relative;
 
     .image-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 50%;
-      background: rgba(0, 0, 0, 0.6);
-      color: $accent;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.25s;
-
-      .button-effect {
-        text-align: center;
-        padding: 30px 0px;
-
-        a {
-          font-size: 1.5rem;
-          background-color: $dark-theme-bg;
-        }
-      }
-
-      .effect {
-        text-align: center;
-        display: inline-block;
-        position: relative;
-        text-decoration: none;
-        color: $accent;
-        text-transform: capitalize;
-
-        padding: 10px 0px;
-        width: 200px;
-        border-radius: 6px;
-        overflow: hidden;
-      }
-
-      /* effect-1 styles */
-
-      .effect.effect-1 {
-        transition: all 0.2s linear 0s;
-
-        &:before {
-          content: "\f178";
-          font-family: FontAwesome;
-          font-size: 1rem;
-          position: absolute;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          right: 0;
-          top: 0;
-          opacity: 0;
-          height: 100%;
-          width: 40px;
-          transition: all 0.2s linear 0s;
-        }
-
-        &:hover {
-          text-indent: -20px;
-
-          &:before {
-            opacity: 1;
-            text-indent: 0px;
-          }
-        }
-      }
-    }
-
-    .image-overlay:hover {
-      opacity: 1;
+      display: none;
     }
 
     img {
@@ -487,20 +426,28 @@ h1 {
 
       h5 {
         font-size: 1.2rem;
-        line-height: 3rem;
         margin: 0;
       }
 
       .card-text {
-        margin: 0;
+        margin: 0 0 10px 0;
         font-size: 0.8rem;
         font-weight: 200;
         line-height: 21px;
       }
+
+      .mobile-button {
+        background: $light-theme-text;
+        color: $light-theme-bg;
+        padding: 5px 30px;
+        border-radius: 15px;
+        text-decoration: none;
+        font-size: 1rem;
+      }
     }
   }
 
-  @media only screen and (min-width: 915px) {
+  @media only screen and (min-width: 1027px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
@@ -521,6 +468,12 @@ h1 {
 
     .card {
       justify-self: center;
+
+      .card-body {
+        .mobile-button {
+          display: none;
+        }
+      }
     }
 
     .card1 {
@@ -563,6 +516,82 @@ h1 {
       margin: 0;
       justify-self: center;
 
+      .image-overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: rgba(0, 0, 0, 0.6);
+        color: $accent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+
+        .button-effect {
+          text-align: center;
+          padding: 30px 0px;
+
+          a {
+            font-size: 1.5rem;
+            background-color: $dark-theme-bg;
+          }
+        }
+
+        .effect {
+          text-align: center;
+          display: inline-block;
+          position: relative;
+          text-decoration: none;
+          color: $accent;
+          text-transform: capitalize;
+
+          padding: 10px 0px;
+          width: 200px;
+          border-radius: 6px;
+          overflow: hidden;
+        }
+
+        /* effect-1 styles */
+
+        .effect.effect-1 {
+          transition: all 0.2s linear 0s;
+
+          &:before {
+            content: "\f178";
+            font-family: FontAwesome;
+            font-size: 1rem;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            height: 100%;
+            width: 40px;
+            transition: all 0.2s linear 0s;
+          }
+
+          &:hover {
+            text-indent: -20px;
+
+            &:before {
+              opacity: 1;
+              text-indent: 0px;
+            }
+          }
+        }
+      }
+
+      .image-overlay:hover {
+        opacity: 1;
+      }
+
       img {
         border-radius: 5px;
         width: 100%;
@@ -574,8 +603,7 @@ h1 {
         text-align: center;
 
         h5 {
-          font-size: $desktop-paragraph-size;
-          line-height: 70px;
+          font-size: 1.5rem;
           margin: 0;
         }
 
@@ -596,6 +624,29 @@ h1 {
 
     .card3 {
       grid-area: card3;
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    margin-top: 8em;
+
+    .card {
+      width: 575px;
+      height: 500px;
+
+      img {
+        height: 60%;
+      }
+
+      .image-overlay {
+        height: 60%;
+      }
+
+      .card-body {
+        h5 {
+          font-size: $desktop-paragraph-size;
+        }
+      }
     }
   }
 }
@@ -624,7 +675,7 @@ h1 {
   }
 
   .iconify {
-    width: 35px;
+    width: 30.63px;
     height: 35px;
   }
 
@@ -712,6 +763,12 @@ h1 {
       grid-area: adobe;
       justify-self: center;
       align-self: center;
+
+      .iconify,
+      svg[data-icon="simple-icons:adobexd"] {
+        width: 52.5px;
+        height: 61px;
+      }
     }
 
     .adobe-text {
@@ -722,11 +779,6 @@ h1 {
 
     i {
       font-size: 60px;
-    }
-
-    .iconify {
-      width: 60px;
-      height: 60px;
     }
 
     p {
@@ -825,6 +877,12 @@ h1 {
       justify-self: center;
       align-self: center;
       padding-right: 3.125rem;
+
+      .iconify,
+      svg[data-icon="simple-icons:adobexd"] {
+        width: 77px;
+        height: 88px;
+      }
     }
 
     .adobe-text {
@@ -835,11 +893,6 @@ h1 {
 
     i {
       font-size: 5.5rem;
-    }
-
-    .iconify {
-      width: 5.5rem;
-      height: 5.5rem;
     }
 
     p {
@@ -859,6 +912,10 @@ h1 {
         height: 421px;
       }
     }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    margin-top: 8em;
   }
 }
 
@@ -966,39 +1023,12 @@ h1 {
           font-size: 2rem;
           line-height: 3rem;
         }
-
-        button:hover,
-        button:focus {
-          animation-name: pulse;
-          animation-duration: 1.25s;
-          animation-iteration-count: infinite;
-        }
-
-        @keyframes pulse {
-          from {
-            transform: scale(1);
-          }
-
-          50% {
-            transform: scale(0.95);
-          }
-
-          to {
-            transform: scale(1);
-          }
-        }
       }
     }
 
     .icons {
       i {
         font-size: 65px;
-      }
-
-      i:hover {
-        animation-name: pulse;
-        animation-duration: 1.25s;
-        animation-iteration-count: infinite;
       }
     }
   }
@@ -1027,10 +1057,57 @@ h1 {
       }
     }
 
+    .container {
+      form {
+        .effect {
+          text-align: center;
+          display: inline-block;
+          position: relative;
+          text-decoration: none;
+          overflow: hidden;
+        }
+
+        /* effect-1 styles */
+
+        .effect.effect-1 {
+          transition: all 0.2s linear 0s;
+
+          &:before {
+            content: "\f178";
+            font-family: FontAwesome;
+            font-size: 1.5rem;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            height: 100%;
+            width: 60px;
+            transition: all 0.2s linear 0s;
+          }
+
+          &:hover {
+            text-indent: -20px;
+
+            &:before {
+              opacity: 1;
+              text-indent: 0px;
+            }
+          }
+        }
+      }
+    }
+
     .icons {
       i {
         font-size: 5.5rem;
       }
     }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    margin-top: 12em;
   }
 }
