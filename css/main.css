@@ -714,7 +714,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1920px) {
   .about-me {
     margin-top: 8em;
   }
@@ -983,7 +983,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1920px) {
   .work {
     margin-top: 8em;
   }
@@ -1336,7 +1336,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1920px) {
   .skills {
     margin-top: 8em;
   }
@@ -1512,7 +1512,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1920px) {
   .contact {
     margin-top: 12em;
   }
