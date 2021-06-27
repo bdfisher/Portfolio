@@ -32,3 +32,10 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+function closeCurrentTab() {
+  var conf = confirm("Are you sure, you want to close this tab?");
+  if (conf == true) {
+    close();
+  }
+}
