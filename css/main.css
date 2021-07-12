@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f6f5f5;
@@ -6,24 +11,6 @@ body {
   color: #40798c;
   margin: 0;
   padding: 0;
-}
-
-body h1 {
-  font-weight: 400;
-  font-size: 3.125rem;
-  line-height: 4.375rem;
-  text-align: center;
-  letter-spacing: 0px;
-}
-
-@media only screen and (min-width: 1200px) {
-  body h1 {
-    font-weight: 400;
-    font-size: 4.06rem;
-    line-height: 6.125rem;
-    text-align: left;
-    letter-spacing: 0px;
-  }
 }
 
 body .underline {
@@ -144,6 +131,11 @@ body .underline {
           animation-delay: 0.6s;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f6f5f5;
@@ -151,24 +143,6 @@ body {
   color: #40798c;
   margin: 0;
   padding: 0;
-}
-
-body h1 {
-  font-weight: 400;
-  font-size: 3.125rem;
-  line-height: 4.375rem;
-  text-align: center;
-  letter-spacing: 0px;
-}
-
-@media only screen and (min-width: 1200px) {
-  body h1 {
-    font-weight: 400;
-    font-size: 4.06rem;
-    line-height: 6.125rem;
-    text-align: left;
-    letter-spacing: 0px;
-  }
 }
 
 body .underline {
@@ -466,23 +440,32 @@ body.dark-theme .work .card .card-body .mobile-button {
   position: absolute;
   right: 30px;
   top: -30px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .hero-section .toggle i {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
+  font-size: 1.5rem;
 }
 
 .hero-section h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  text-align: center;
+  letter-spacing: 0px;
   text-shadow: 0.5px 0.5px #707070;
 }
 
 .hero-section h1 p {
   font-weight: 200;
-  font-size: 2.19rem;
-  line-height: 3.3125rem;
-  text-align: left;
-  width: 300px;
+  font-size: 2.8rem;
+  line-height: 5.3rem;
+  text-align: center;
+  width: 380px;
   margin: 0 auto;
 }
 
@@ -541,7 +524,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 2fr 1fr;
     -ms-grid-rows: 0.2fr 2fr 1fr;
         grid-template-rows: 0.2fr 2fr 1fr;
-        grid-template-areas: "... toggle" "text memoji" "wave wave";
+        grid-template-areas: "... toggle" "text memoji" "wave wave";
   }
   .hero-section .toggle {
     position: static;
@@ -553,7 +536,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         align-self: center;
     -ms-grid-column-align: end;
         justify-self: end;
-    padding-right: 3em;
+    padding-right: 4.8em;
   }
   .hero-section .indicator-mobile {
     -ms-grid-row: 3;
@@ -575,11 +558,12 @@ body.dark-theme .work .card .card-body .mobile-button {
         justify-self: center;
   }
   .hero-section .hero-text h1 {
-    font-size: 4.06rem;
     text-align: left;
+    font-size: 5rem;
   }
   .hero-section .hero-text h1 p {
-    font-size: 2.75rem;
+    font-size: 4rem;
+    text-align: left;
     width: 400px;
     margin: 0;
   }
@@ -594,8 +578,8 @@ body.dark-theme .work .card .card-body .mobile-button {
         justify-self: center;
   }
   .hero-section .hero-image img {
-    height: 298px;
-    width: 298px;
+    height: 275px;
+    width: 275px;
   }
   .hero-section .wave {
     -ms-grid-row: 3;
@@ -617,7 +601,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 2fr 1fr 0.2fr;
     -ms-grid-rows: 0.2fr 4fr 2fr;
         grid-template-rows: 0.2fr 4fr 2fr;
-        grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
+        grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
   }
   .hero-section .hero-text {
     -ms-grid-row: 2;
@@ -630,13 +614,18 @@ body.dark-theme .work .card .card-body .mobile-button {
         align-self: center;
   }
   .hero-section .hero-text h1 {
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 9.8rem;
+    text-align: left;
+    letter-spacing: 0px;
     text-shadow: 0.5px 0.5px #707070;
     padding-left: 0.75em;
   }
   .hero-section .hero-text h1 p {
-    font-size: 4.06rem;
+    font-size: 6.5rem;
     font-weight: 200;
-    line-height: 6.125rem;
+    line-height: 9.8rem;
     width: 100%;
   }
   .hero-section .hero-image {
@@ -650,8 +639,8 @@ body.dark-theme .work .card .card-body .mobile-button {
         align-self: center;
   }
   .hero-section .hero-image img {
-    height: 421px;
-    width: 421px;
+    height: 400px;
+    width: 400px;
     padding-left: 0.75em;
   }
   .hero-section .wave {
@@ -716,178 +705,18 @@ body.dark-theme .work .card .card-body .mobile-button {
   }
 }
 
-.about-me {
-  width: 100%;
-}
-
-.about-me .title h1 {
-  margin-top: 0;
-}
-
-.about-me .about-text {
-  /* effect-1 styles */
-}
-
-.about-me .about-text p {
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: left;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.about-me .about-text .button-effect {
-  text-align: center;
-  padding: 30px 0px;
-}
-
-.about-me .about-text .button-effect a {
-  background-color: #40798c;
-}
-
-.about-me .about-text .effect {
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: #f6f5f5;
-  text-transform: capitalize;
-  padding: 10px 0px;
-  width: 150px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.about-me .about-text .effect.effect-1 {
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
-}
-
-.about-me .about-text .effect.effect-1:before {
-  content: "\f178";
-  font-family: FontAwesome;
-  font-size: 15px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  height: 100%;
-  width: 40px;
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
-}
-
-.about-me .about-text .effect.effect-1:hover {
-  text-indent: -20px;
-}
-
-.about-me .about-text .effect.effect-1:hover:before {
-  opacity: 1;
-  text-indent: 0px;
-}
-
-.about-me .memoji {
-  text-align: center;
-}
-
-.about-me .memoji img {
-  width: 201.3px;
-  height: 266.25px;
-  padding: 0;
-}
-
-@media only screen and (min-width: 700px) {
-  .about-me .title h1 {
-    font-size: 3.125rem;
-    margin-top: 0.5em;
-  }
-  .about-me .about-text p {
-    font-size: 1.875rem;
-  }
-  .about-me .memoji img {
-    width: 245.44px;
-    height: 331.09px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .about-me {
-    margin-top: 2em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.8fr 2fr 1fr 0.8fr;
-        grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
-    -ms-grid-rows: 1fr 3fr;
-        grid-template-rows: 1fr 3fr;
-        grid-template-areas: "... title title ..." "... text image ...";
-  }
-  .about-me .title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-area: title;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
-  }
-  .about-me .title h1 {
-    font-size: 4.06rem;
-  }
-  .about-me .about-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: text;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  .about-me .about-text p {
-    font-weight: 200;
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-  .about-me .memoji {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: image;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .about-me .memoji img {
-    width: 375px;
-    height: 496px;
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .about-me {
-    margin-top: 8em;
-  }
-  .about-me .about-text p {
-    width: 65%;
-  }
-}
-
 .work {
   width: 100%;
+}
+
+.work h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  text-align: center;
+  letter-spacing: 0px;
+  text-shadow: 0.5px 0.5px #707070;
+  margin-top: 0;
 }
 
 .work .card {
@@ -917,16 +746,23 @@ body.dark-theme .work .card .card-body .mobile-button {
   text-align: center;
 }
 
-.work .card .card-body h5 {
-  font-size: 1.2rem;
+.work .card .card-body .card-title {
+  font-size: 2rem;
   margin: 0;
 }
 
 .work .card .card-body .card-text {
-  margin: 0 0 10px 0;
-  font-size: 0.8rem;
+  text-align: left;
+  margin: 0 10px 0 10px;
+  font-size: 1.3rem;
   font-weight: 200;
-  line-height: 21px;
+  line-height: 18px;
+}
+
+.work .card .card-body .made-with {
+  font-weight: bold;
+  margin: 0 10px 10px 5px;
+  font-size: 1.3rem;
 }
 
 .work .card .card-body .mobile-button {
@@ -935,7 +771,8 @@ body.dark-theme .work .card .card-body .mobile-button {
   padding: 5px 30px;
   border-radius: 15px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1027px) {
@@ -946,7 +783,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr;
-        grid-template-areas: "title title title" "card1 card2 card3";
+        grid-template-areas: "title title title" "card1 card2 card3";
     gap: 0 1em;
   }
   .work .title {
@@ -960,15 +797,12 @@ body.dark-theme .work .card .card-body .mobile-button {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .work .title h1 {
-    font-size: 3.125rem;
+  .work .title h2 {
+    font-size: 5rem;
   }
   .work .card {
     -ms-grid-column-align: center;
         justify-self: center;
-  }
-  .work .card .card-body .mobile-button {
-    display: none;
   }
   .work .card1 {
     -ms-grid-row: 2;
@@ -987,6 +821,12 @@ body.dark-theme .work .card .card-body .mobile-button {
   }
 }
 
+@media only screen and (min-width: 1027px) and (hover: hover) {
+  .work .card-body .mobile-button {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .work {
     display: -ms-grid;
@@ -995,7 +835,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.8fr 2.5fr;
         grid-template-rows: 0.8fr 2.5fr;
-        grid-template-areas: "title title title" "card1 card2 card3";
+        grid-template-areas: "title title title" "card1 card2 card3";
     gap: 1em 2em;
   }
   .work .title {
@@ -1008,9 +848,15 @@ body.dark-theme .work .card .card-body .mobile-button {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+    margin-top: 7em;
   }
-  .work .title h1 {
-    font-size: 4.06rem;
+  .work .title h2 {
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 9.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    text-shadow: 0.5px 0.5px #707070;
   }
   .work .card {
     width: 375px;
@@ -1053,9 +899,10 @@ body.dark-theme .work .card .card-body .mobile-button {
   .work .card .image-overlay .button-effect {
     text-align: center;
     padding: 30px 0px;
+    cursor: pointer;
   }
   .work .card .image-overlay .button-effect a {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     background-color: #22223b;
   }
   .work .card .image-overlay .effect {
@@ -1077,7 +924,7 @@ body.dark-theme .work .card .card-body .mobile-button {
   .work .card .image-overlay .effect.effect-1:before {
     content: "\f178";
     font-family: FontAwesome;
-    font-size: 1rem;
+    font-size: 1.6rem;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1115,13 +962,17 @@ body.dark-theme .work .card .card-body .mobile-button {
     padding-top: 2px;
     text-align: center;
   }
-  .work .card .card-body h5 {
-    font-size: 1.5rem;
+  .work .card .card-body .card-title {
+    font-size: 2.4rem;
     margin: 0;
   }
   .work .card .card-body .card-text {
-    font-size: 1rem;
-    line-height: 27px;
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  .work .card .card-body .made-with {
+    margin: 5px 10px 10px 5px;
+    font-size: 1.6rem;
   }
   .work .card1 {
     -ms-grid-row: 2;
@@ -1142,7 +993,7 @@ body.dark-theme .work .card .card-body .mobile-button {
 
 @media only screen and (min-width: 1920px) {
   .work {
-    margin-top: 8em;
+    margin-top: 12.8em;
   }
   .work .card {
     width: 575px;
@@ -1154,8 +1005,190 @@ body.dark-theme .work .card .card-body .mobile-button {
   .work .card .image-overlay {
     height: 60%;
   }
-  .work .card .card-body h5 {
-    font-size: 2rem;
+  .work .card .card-body .card-title {
+    font-size: 3.2rem;
+  }
+}
+
+.about-me {
+  width: 100%;
+}
+
+.about-me .title h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  text-align: center;
+  letter-spacing: 0px;
+  text-shadow: 0.5px 0.5px #707070;
+}
+
+.about-me .about-text {
+  /* effect-1 styles */
+}
+
+.about-me .about-text p {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-me .about-text .button-effect {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.about-me .about-text .button-effect a {
+  background-color: #40798c;
+  font-size: 20px;
+}
+
+.about-me .about-text .effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #f6f5f5;
+  text-transform: capitalize;
+  padding: 10px 0px;
+  width: 175px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.about-me .about-text .effect.effect-1 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.about-me .about-text .effect.effect-1:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 20px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+
+.about-me .about-text .effect.effect-1:hover {
+  text-indent: -20px;
+}
+
+.about-me .about-text .effect.effect-1:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+
+.about-me .memoji {
+  text-align: center;
+}
+
+.about-me .memoji img {
+  width: 201.3px;
+  height: 266.25px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-me {
+    margin-top: 1em;
+  }
+  .about-me .title h2 {
+    font-size: 5rem;
+  }
+  .about-me .about-text p {
+    font-size: 3rem;
+  }
+  .about-me .memoji img {
+    width: 245.44px;
+    height: 331.09px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.8fr 2fr 1fr 0.8fr;
+        grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
+    -ms-grid-rows: 1fr 3fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: "... title title ..." "... text image ...";
+  }
+  .about-me .title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .about-me .title h2 {
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 9.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    text-shadow: 0.5px 0.5px #707070;
+  }
+  .about-me .about-text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .about-me .about-text p {
+    font-weight: 200;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .about-me .memoji {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: image;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .about-me .memoji img {
+    width: 325px;
+    height: 446px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .about-me {
+    margin-top: 12.8em;
+  }
+  .about-me .about-text p {
+    width: 65%;
   }
 }
 
@@ -1163,8 +1196,14 @@ body.dark-theme .work .card .card-body .mobile-button {
   width: 100%;
 }
 
-.skills .title h1 {
-  padding-top: 0.5em;
+.skills .title h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  text-align: center;
+  letter-spacing: 0px;
+  text-shadow: 0.5px 0.5px #707070;
+  padding-top: 0.8em;
 }
 
 .skills .webdev-icons {
@@ -1192,9 +1231,9 @@ body.dark-theme .work .card .card-body .mobile-button {
 
 .skills p {
   text-align: center;
-  font-size: 1.56rem;
+  font-size: 2rem;
   font-weight: 200;
-  margin: 3px 0;
+  margin: 5px 0;
 }
 
 .skills .memoji {
@@ -1214,7 +1253,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
     -ms-grid-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
         grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
-        grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal adobe ..." "... drupaltxt adobetxt ..." "... memoji memoji ...";
+        grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal adobe ..." "... drupaltxt adobetxt ..." "... memoji memoji ...";
   }
   .skills .title {
     -ms-grid-row: 1;
@@ -1227,8 +1266,8 @@ body.dark-theme .work .card .card-body .mobile-button {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .skills .title h1 {
-    font-size: 3.125rem;
+  .skills .title h2 {
+    font-size: 5rem;
   }
   .skills .webdev-icons {
     -ms-grid-row: 2;
@@ -1319,7 +1358,7 @@ body.dark-theme .work .card .card-body .mobile-button {
     font-size: 60px;
   }
   .skills p {
-    font-size: 2.19rem;
+    font-size: 3.2rem;
     margin: 10px 0;
   }
   .skills .memoji {
@@ -1354,7 +1393,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 125px 125px 125px 125px;
         grid-template-rows: 0.2fr 125px 125px 125px 125px;
-        grid-template-areas: "title title title" "icons text1 memoji" "bootstrap text2 memoji" "drupal text3 memoji" "adobe text4 memoji";
+        grid-template-areas: "title title title" "icons text1 memoji" "bootstrap text2 memoji" "drupal text3 memoji" "adobe text4 memoji";
   }
   .skills .title {
     -ms-grid-row: 1;
@@ -1366,12 +1405,16 @@ body.dark-theme .work .card .card-body .mobile-button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-top: 2em;
   }
-  .skills .title h1 {
+  .skills .title h2 {
     margin: 0;
     padding: 0;
-    font-size: 4.06rem;
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 9.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    text-shadow: 0.5px 0.5px #707070;
   }
   .skills .webdev-icons {
     -ms-grid-row: 2;
@@ -1405,7 +1448,7 @@ body.dark-theme .work .card .card-body .mobile-button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    padding-right: 3.125rem;
+    padding-right: 3.5rem;
   }
   .skills .bootstrap-text {
     -ms-grid-row: 3;
@@ -1426,7 +1469,7 @@ body.dark-theme .work .card .card-body .mobile-button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    padding-right: 3.125rem;
+    padding-right: 3.5rem;
   }
   .skills .drupal-text {
     -ms-grid-row: 4;
@@ -1447,12 +1490,12 @@ body.dark-theme .work .card .card-body .mobile-button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    padding-right: 3.125rem;
+    padding-right: 3.5rem;
   }
   .skills .adobexd .iconify,
   .skills .adobexd svg[data-icon="simple-icons:adobexd"] {
-    width: 77px;
-    height: 88px;
+    width: 55px;
+    height: 67px;
   }
   .skills .adobe-text {
     -ms-grid-row: 5;
@@ -1465,10 +1508,10 @@ body.dark-theme .work .card .card-body .mobile-button {
         align-self: center;
   }
   .skills i {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
   }
   .skills p {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 200;
     line-height: 76px;
     margin: 0;
@@ -1492,7 +1535,7 @@ body.dark-theme .work .card .card-body .mobile-button {
 
 @media only screen and (min-width: 1920px) {
   .skills {
-    margin-top: 8em;
+    margin-top: 12.8em;
   }
 }
 
@@ -1506,7 +1549,13 @@ body.dark-theme .work .card .card-body .mobile-button {
           clip-path: circle(85% at 50% 84%);
 }
 
-.contact .title h1 {
+.contact .title h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  text-align: center;
+  letter-spacing: 0px;
+  text-shadow: 0.5px 0.5px #707070;
   color: #22223b;
   text-decoration: underline;
   margin-bottom: 30px;
@@ -1524,10 +1573,11 @@ body.dark-theme .work .card .card-body .mobile-button {
 
 .contact .container form input,
 .contact .container form textarea {
-  width: 253px;
-  margin-bottom: 1rem;
+  width: 225px;
+  margin-bottom: 1.6rem;
   border-radius: 3px;
   border-style: none;
+  cursor: text;
 }
 
 .contact .container form input {
@@ -1545,6 +1595,7 @@ body.dark-theme .work .card .card-body .mobile-button {
   font-size: 20px;
   line-height: 30px;
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 .contact .icons {
@@ -1559,8 +1610,9 @@ body.dark-theme .work .card .card-body .mobile-button {
 }
 
 .contact .icons i {
-  font-size: 40px;
+  font-size: 35px;
   padding: 20px 20px 0 20px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 700px) {
@@ -1571,8 +1623,8 @@ body.dark-theme .work .card .card-body .mobile-button {
   .contact .title {
     text-align: center;
   }
-  .contact .title h1 {
-    font-size: 3.125rem;
+  .contact .title h2 {
+    font-size: 5rem;
     padding-top: 2em;
   }
   .contact .container form .form-control {
@@ -1580,18 +1632,18 @@ body.dark-theme .work .card .card-body .mobile-button {
   }
   .contact .container form input,
   .contact .container form textarea {
-    width: 375px;
+    width: 325px;
   }
   .contact .container form input {
     height: 70px;
   }
   .contact .container form button {
     width: 323px;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.8rem;
+    line-height: 4rem;
   }
   .contact .icons i {
-    font-size: 65px;
+    font-size: 60px;
   }
 }
 
@@ -1612,10 +1664,15 @@ body.dark-theme .work .card .card-body .mobile-button {
   .contact .title {
     text-align: center;
   }
-  .contact .title h1 {
+  .contact .title h2 {
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 9.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    text-shadow: 0.5px 0.5px #707070;
     text-align: center;
-    font-size: 4.06rem;
-    padding: 0 0 0.25em 0;
+    padding: 0 0 0.4em 0;
     margin: 0;
   }
   .contact .container form {
@@ -1635,7 +1692,7 @@ body.dark-theme .work .card .card-body .mobile-button {
   .contact .container form .effect.effect-1:before {
     content: "\f178";
     font-family: FontAwesome;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1662,13 +1719,13 @@ body.dark-theme .work .card .card-body .mobile-button {
     text-indent: 0px;
   }
   .contact .icons i {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .contact {
-    margin-top: 12em;
+    margin-top: 19.2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

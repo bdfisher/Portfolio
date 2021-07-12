@@ -35,9 +35,9 @@
 
 <body>
   <section class="hero-section">
-    <div class="toggle">
+    <button class="toggle" aria-label="Switch Themes">
       <i class="far fa-moon" id="theme-button"></i>
-    </div>
+    </button>
 
     <div class="hero-text">
       <h1>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="wave">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"
+      <svg preserveAspectRatio="xMidYMid"
         viewBox="0 0 1440 275" aria-label="Animated Wave">
         <g transform="translate(720,169) scale(1,-1) translate(-720,-169)">
           <linearGradient id="lg-0.8964446563029846" x1="0" x2="1" y1="0" y2="0">
@@ -94,33 +94,13 @@
     </div>
   </section>
 
-  <section class="about-me" data-aos="fade-up">
+  <section class="work" data-aos="fade-left">
     <div class="title">
-      <h1><span class="underline">About Me</span></h1>
-    </div>
-
-    <div class="about-text">
-      <p>
-        Hi! My name is Blake Fisher and I am a front-end web developer and a
-        student at Iowa State University. I have a passion for designing and
-        building beautiful and functional websites.
-      </p>
-      <div class="button-effect">
-        <a class="effect effect-1" href="assets/Resume.pdf" title="Resume" target="blank">Resume</a>
-      </div>
-    </div>
-    <div class="memoji">
-      <img src="assets/images/memoji.png" alt="Blake Fisher Memoji" />
-    </div>
-  </section>
-
-  <section class="work" data-aos="fade-up">
-    <div class="title">
-      <h1><span class="underline">Work</span></h1>
+      <h2><span class="underline">Work</span></h2>
     </div>
 
     <div class="card card1">
-      <img src="assets/images/work/iTrakz.png" alt="iTrakz Screenschot" loading="lazy" />
+      <img src="assets/images/work/iTrakz.png" alt="iTrakz Screenschot"/>
       <div class="image-overlay">
         <div class="button-effect">
           <!-- <a class="effect effect-1" href="#" title="Live Site" target="blank">Live Site</a>
@@ -129,19 +109,18 @@
         </div>
       </div>
       <div class="card-body">
-        <h5 class="card-title">iTrakz</h5>
+        <p class="card-title">iTrakz</p>
         <p class="card-text">
           Self-contained bug/issue tracking web application, designed to be
           used in small projects. Allows users to create, view, and edit
           support tickets.
-          <br />
-          <strong>Made with: HTML, CSS, JS, SQlite</strong>
         </p>
+        <p class="made-with">Made with: HTML, CSS, JS, SQlite</p>
         <a href="https://github.com/bdfisher/iTrakz" title="Github" target="blank" class="mobile-button">Github</a>
       </div>
     </div>
     <div class="card card2">
-      <img src="assets/images/work/portfolio.png" alt="Portfolio Screenschot" loading="lazy" />
+      <img src="assets/images/work/portfolio.png" alt="Portfolio Screenschot"/>
       <div class="image-overlay">
         <div class="button-effect">
           <a class="effect effect-1" href="https://github.com/bdfisher/Portfolio" title="Github"
@@ -149,41 +128,60 @@
         </div>
       </div>
       <div class="card-body">
-        <h5 class="card-title">Portfolio Website</h5>
+        <p class="card-title">Portfolio Website</p>
         <p class="card-text">
           Portfolio site to showcase my work and skills. I will be continually
           updating this website as I make more projects and develop new
           skills.
-          <br />
-          <strong>Made with: HTML, Sass, CSS Grid, JS</strong>
         </p>
+        <p class="made-with">Made with: HTML, Sass, CSS Grid, JS</p>
         <a href="https://github.com/bdfisher/Portfolio" title="Github" target="blank" class="mobile-button">Github</a>
       </div>
     </div>
     <div class="card card3">
-      <img src="assets/images/work/isu.png" alt="Iowa State Learning Communities" loading="lazy" />
+      <img src="assets/images/work/isu.png" alt="Iowa State Learning Communities" />
       <div class="image-overlay">
         <div class="button-effect">
           <a class="effect effect-1" href="https://www.lc.iastate.edu/" title="Live Site" target="blank">Live Site</a>
         </div>
       </div>
       <div class="card-body">
-        <h5 class="card-title">ISU Learning Communities</h5>
+        <p class="card-title">ISU Learning Communities</p>
         <p class="card-text">
           Iowa State University's Learning Community Website. I have created
           many of the pages on this site to adhere to the university's theme
           and attract more students to ISU's Learning Communities.
-          <br />
-          <strong>Made with: Drupal 7, HTML, CSS, Bootstrap</strong>
         </p>
+        <p class="made-with">Made with: Drupal 7, HTML, CSS, Bootstrap</p>
         <a href="https://www.lc.iastate.edu/" title="Live Site" target="blank" class="mobile-button">Live Site</a>
       </div>
     </div>
   </section>
-
-  <section class="skills" data-aos="fade-up">
+  
+  
+  <section class="about-me" data-aos="fade-right">
     <div class="title">
-      <h1><span class="underline">Skills</span></h1>
+      <h2><span class="underline">About Me</span></h2>
+    </div>
+
+    <div class="about-text">
+      <p>
+        Hi! My name is Blake Fisher. I am a front-end web developer and a
+        student at Iowa State University. I have a passion for designing and
+        building beautiful and functional websites.
+      </p>
+      <div class="button-effect">
+        <a class="effect effect-1" href="#contact-me" title="Contact Me">Contact Me!</a>
+      </div>
+    </div>
+    <div class="memoji">
+      <img src="assets/images/memoji.png" alt="Blake Fisher Memoji" />
+    </div>
+  </section>
+
+  <section class="skills" data-aos="fade-left">
+    <div class="title">
+      <h2><span class="underline">Skills</span></h2>
     </div>
 
     <div class="webdev-icons">
@@ -208,10 +206,10 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact-me">
     <div class="contact-bg">
       <div class="title">
-        <h1>Contact</h1>
+        <h2>Contact</h2>
       </div>
 
       <div class="container">
@@ -252,7 +250,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      delay: 450,
+      duration: 1200,
     });
   </script>
   <script src="js/main.js"></script>

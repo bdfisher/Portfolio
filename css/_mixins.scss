@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin mobile-headers {
+    font-weight: 400;
+    font-size: $mobile-heading-size;
+    line-height: 7rem;
+    text-align: center;
+    letter-spacing: 0px;
+    text-shadow: 0.5px 0.5px $text-border;
+}
+
+@mixin desktop-headers {
+    font-weight: 400;
+    font-size: $desktop-heading-size;
+    line-height: 9.8rem;
+    text-align: left;
+    letter-spacing: 0px;
+    text-shadow: 0.5px 0.5px $text-border;
+}
