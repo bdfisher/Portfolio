@@ -20,15 +20,16 @@
 
   .toggle {
     position: absolute;
-    right: 30px;
-    top: -30px;
+    right: 25px;
+    top: -25px;
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
 
     i {
       transform: rotate(-20deg);
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -89,7 +90,7 @@
       grid-area: toggle;
       align-self: center;
       justify-self: end;
-      padding-right: 4.8em;
+      padding-right: 3em;
     }
 
     .indicator-mobile {
@@ -134,7 +135,6 @@
 
   @media only screen and (min-width: 1200px) {
     height: 100vh;
-
     display: grid;
     grid-template-columns: 2fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 4fr 2fr;

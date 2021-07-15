@@ -438,17 +438,18 @@ body.dark-theme .work .card .card-body .mobile-button {
 
 .hero-section .toggle {
   position: absolute;
-  right: 30px;
-  top: -30px;
+  right: 25px;
+  top: -25px;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .hero-section .toggle i {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .hero-section h1 {
@@ -524,7 +525,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 2fr 1fr;
     -ms-grid-rows: 0.2fr 2fr 1fr;
         grid-template-rows: 0.2fr 2fr 1fr;
-        grid-template-areas: "... toggle" "text memoji" "wave wave";
+        grid-template-areas: "... toggle" "text memoji" "wave wave";
   }
   .hero-section .toggle {
     position: static;
@@ -536,7 +537,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         align-self: center;
     -ms-grid-column-align: end;
         justify-self: end;
-    padding-right: 4.8em;
+    padding-right: 3em;
   }
   .hero-section .indicator-mobile {
     -ms-grid-row: 3;
@@ -601,7 +602,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 2fr 1fr 0.2fr;
     -ms-grid-rows: 0.2fr 4fr 2fr;
         grid-template-rows: 0.2fr 4fr 2fr;
-        grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
+        grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
   }
   .hero-section .hero-text {
     -ms-grid-row: 2;
@@ -783,7 +784,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr;
-        grid-template-areas: "title title title" "card1 card2 card3";
+        grid-template-areas: "title title title" "card1 card2 card3";
     gap: 0 1em;
   }
   .work .title {
@@ -835,7 +836,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.8fr 2.5fr;
         grid-template-rows: 0.8fr 2.5fr;
-        grid-template-areas: "title title title" "card1 card2 card3";
+        grid-template-areas: "title title title" "card1 card2 card3";
     gap: 1em 2em;
   }
   .work .title {
@@ -1130,7 +1131,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
     -ms-grid-rows: 1fr 3fr;
         grid-template-rows: 1fr 3fr;
-        grid-template-areas: "... title title ..." "... text image ...";
+        grid-template-areas: "... title title ..." "... text image ...";
   }
   .about-me .title {
     -ms-grid-row: 1;
@@ -1253,7 +1254,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
     -ms-grid-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
         grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
-        grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal adobe ..." "... drupaltxt adobetxt ..." "... memoji memoji ...";
+        grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal adobe ..." "... drupaltxt adobetxt ..." "... memoji memoji ...";
   }
   .skills .title {
     -ms-grid-row: 1;
@@ -1393,7 +1394,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 125px 125px 125px 125px;
         grid-template-rows: 0.2fr 125px 125px 125px 125px;
-        grid-template-areas: "title title title" "icons text1 memoji" "bootstrap text2 memoji" "drupal text3 memoji" "adobe text4 memoji";
+        grid-template-areas: "title title title" "icons text1 memoji" "bootstrap text2 memoji" "drupal text3 memoji" "adobe text4 memoji";
   }
   .skills .title {
     -ms-grid-row: 1;
