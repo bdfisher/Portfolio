@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
-@import "globals";
-@import "variables";
-@import "indicator";
-@import "dark";
-@import "mixins";
-@import "thanks";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import 'globals';
+@import 'variables';
+@import 'indicator';
+@import 'dark';
+@import 'mixins';
+@import 'thanks';
 
 .hero-section {
   position: relative;
@@ -81,9 +81,9 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 0.2fr 2fr 1fr;
     grid-template-areas:
-      "... toggle"
-      "text memoji"
-      "wave wave";
+      '... toggle'
+      'text memoji'
+      'wave wave';
 
     .toggle {
       position: static;
@@ -139,9 +139,9 @@
     grid-template-columns: 2fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 4fr 2fr;
     grid-template-areas:
-      "... ... toggle"
-      "text image ..."
-      "wave wave wave";
+      '... ... toggle'
+      'text image ...'
+      'wave wave wave';
 
     .hero-text {
       grid-area: text;
@@ -285,8 +285,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
     grid-template-areas:
-      "title title title"
-      "card1 card2 card3";
+      'title title title'
+      'card1 card2 card3';
     gap: 0 1em;
 
     .title {
@@ -329,8 +329,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.8fr 2.5fr;
     grid-template-areas:
-      "title title title"
-      "card1 card2 card3";
+      'title title title'
+      'card1 card2 card3';
     gap: 1em 2em;
 
     .title {
@@ -400,7 +400,7 @@
           transition: all 0.2s linear 0s;
 
           &:before {
-            content: "\f178";
+            content: '\f178';
             font-family: FontAwesome;
             font-size: 1.6rem;
             position: absolute;
@@ -544,7 +544,7 @@
       transition: all 0.2s linear 0s;
 
       &:before {
-        content: "\f178";
+        content: '\f178';
         font-family: FontAwesome;
         font-size: 20px;
         position: absolute;
@@ -582,7 +582,7 @@
 
   @media only screen and (min-width: 700px) {
     margin-top: 1em;
-    
+
     .title {
       h2 {
         font-size: $tablet-heading-size;
@@ -608,8 +608,8 @@
     grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
     grid-template-rows: 1fr 3fr;
     grid-template-areas:
-      "... title title ..."
-      "... text image ...";
+      '... title title ...'
+      '... text image ...';
 
     .title {
       grid-area: title;
@@ -679,13 +679,7 @@
     margin: 0;
   }
 
-  .iconify {
-    width: 30.63px;
-    height: 35px;
-  }
-
-  .center,
-  svg[data-icon="simple-icons:adobexd"] {
+  .center {
     text-align: center;
     width: 100%;
   }
@@ -711,12 +705,12 @@
     grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
     grid-template-areas:
-      "... title title ..."
-      "... webdev bootstrap ..."
-      "... webtxt boottext ..."
-      "... drupal adobe ..."
-      "... drupaltxt adobetxt ..."
-      "... memoji memoji ...";
+      '... title title ...'
+      '... webdev bootstrap ...'
+      '... webtxt boottext ...'
+      '... drupal figma ...'
+      '... drupaltxt figmatxt ...'
+      '... memoji memoji ...';
 
     .title {
       grid-area: title;
@@ -764,20 +758,14 @@
       align-self: start;
     }
 
-    .adobexd {
-      grid-area: adobe;
+    .fa-figma {
+      grid-area: figma;
       justify-self: center;
       align-self: center;
-
-      .iconify,
-      svg[data-icon="simple-icons:adobexd"] {
-        width: 52.5px;
-        height: 61px;
-      }
     }
 
-    .adobe-text {
-      grid-area: adobetxt;
+    .figma-text {
+      grid-area: figmatxt;
       justify-self: center;
       align-self: start;
     }
@@ -817,11 +805,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 125px 125px 125px 125px;
     grid-template-areas:
-      "title title title"
-      "icons text1 memoji"
-      "bootstrap text2 memoji"
-      "drupal text3 memoji"
-      "adobe text4 memoji";
+      'title title title'
+      'icons text1 memoji'
+      'bootstrap text2 memoji'
+      'drupal text3 memoji'
+      'figma text4 memoji';
 
     .title {
       grid-area: title;
@@ -877,20 +865,14 @@
       align-self: center;
     }
 
-    .adobexd {
-      grid-area: adobe;
+    .fa-figma {
+      grid-area: figma;
       justify-self: center;
       align-self: center;
       padding-right: 3.5rem;
-
-      .iconify,
-      svg[data-icon="simple-icons:adobexd"] {
-        width: 55px;
-        height: 67px;
-      }
     }
 
-    .adobe-text {
+    .figma-text {
       grid-area: text4;
       justify-self: center;
       align-self: center;
@@ -943,12 +925,20 @@
   }
 
   .container {
+    display: flex;
+    justify-content: center;
     form {
-      text-align: center;
-
       .form-control {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 20px;
+      }
+
+      label {
+        font-family: 'Poppins', sans-serif;
+        color: $dark-theme-bg;
+        font-size: 2.25rem;
+        text-align: left;
+        font-weight: bold;
       }
 
       input,
@@ -958,10 +948,6 @@
         border-radius: 3px;
         border-style: none;
         cursor: text;
-      }
-
-      input {
-        height: 50px;
       }
 
       button {
@@ -1014,7 +1000,7 @@
     .container {
       form {
         .form-control {
-          font-size: 25px;
+          font-size: 20px;
         }
 
         input,
@@ -1023,7 +1009,7 @@
         }
 
         input {
-          height: 70px;
+          height: 50px;
         }
 
         button {
@@ -1081,7 +1067,7 @@
           transition: all 0.2s linear 0s;
 
           &:before {
-            content: "\f178";
+            content: '\f178';
             font-family: FontAwesome;
             font-size: 2.4rem;
             position: absolute;

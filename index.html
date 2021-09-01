@@ -15,9 +15,6 @@
   <link rel="preconnect" rel="preload" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
 
-  <!-- Adobe XD Icon -->
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
   <!-- Animate on Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -54,8 +51,7 @@
     </div>
 
     <div class="wave">
-      <svg preserveAspectRatio="xMidYMid"
-        viewBox="0 0 1440 275" aria-label="Animated Wave">
+      <svg preserveAspectRatio="xMidYMid" viewBox="0 0 1440 275" aria-label="Animated Wave">
         <g transform="translate(720,169) scale(1,-1) translate(-720,-169)">
           <linearGradient id="lg-0.8964446563029846" x1="0" x2="1" y1="0" y2="0">
             <stop stop-color="#78e0dc" offset="0" />
@@ -100,7 +96,7 @@
     </div>
 
     <div class="card card1">
-      <img src="assets/images/work/iTrakz.png" alt="iTrakz Screenschot"/>
+      <img src="assets/images/work/iTrakz.png" alt="iTrakz Screenschot" />
       <div class="image-overlay">
         <div class="button-effect">
           <!-- <a class="effect effect-1" href="#" title="Live Site" target="blank">Live Site</a>
@@ -120,7 +116,7 @@
       </div>
     </div>
     <div class="card card2">
-      <img src="assets/images/work/portfolio.png" alt="Portfolio Screenschot"/>
+      <img src="assets/images/work/portfolio.png" alt="Portfolio Screenschot" />
       <div class="image-overlay">
         <div class="button-effect">
           <a class="effect effect-1" href="https://github.com/bdfisher/Portfolio" title="Github"
@@ -139,26 +135,26 @@
       </div>
     </div>
     <div class="card card3">
-      <img src="assets/images/work/isu.png" alt="Iowa State Learning Communities" />
+      <img src="assets/images/work/uia.png" alt="University Innovation Alliance at Iowa State" />
       <div class="image-overlay">
         <div class="button-effect">
-          <a class="effect effect-1" href="https://www.lc.iastate.edu/" title="Live Site" target="blank">Live Site</a>
+          <a class="effect effect-1" href="https://www.uia.iastate.edu/" title="Live Site" target="blank">Live Site</a>
         </div>
       </div>
       <div class="card-body">
-        <p class="card-title">ISU Learning Communities</p>
+        <p class="card-title">UIA at ISU</p>
         <p class="card-text">
-          Iowa State University's Learning Community Website. I have created
-          many of the pages on this site to adhere to the university's theme
-          and attract more students to ISU's Learning Communities.
+          University Innovation Alliance at ISU Website. I have created
+          and rebuilt many of the pages on this site to adhere to the university's theme
+          and inform more students about UIA at ISU.
         </p>
-        <p class="made-with">Made with: Drupal 7, HTML, CSS, Bootstrap</p>
-        <a href="https://www.lc.iastate.edu/" title="Live Site" target="blank" class="mobile-button">Live Site</a>
+        <p class="made-with">Made with: Drupal 9, HTML, CSS, Bootstrap</p>
+        <a href="https://www.uia.iastate.edu/" title="Live Site" target="blank" class="mobile-button">Live Site</a>
       </div>
     </div>
   </section>
-  
-  
+
+
   <section class="about-me" data-aos="fade-up">
     <div class="title">
       <h2><span class="underline">About Me</span></h2>
@@ -196,10 +192,8 @@
     <i class="fab fa-drupal center"></i>
     <p class="drupal-text">Drupal 7 & 9</p>
 
-    <span class="adobexd">
-      <span class="iconify" data-icon="simple-icons:adobexd" data-inline="false"></span>
-    </span>
-    <p class="adobe-text">Design</p>
+    <i class="fab fa-figma center"></i>
+    <p class="figma-text">Design</p>
 
     <div class="memoji">
       <img src="assets/images/memoji-computer.png" alt="Computer Memoji" />
@@ -216,20 +210,26 @@
         <form action="https://formsubmit.co/359850e0252a6f39c89964c56ba800c0" method="POST">
           <div class="form-group">
             <div class="form-row">
+              <label for="name">Full Name</label>
               <div class="col">
-                <input type="text" name="name" class="form-control" placeholder="Full Name*" required />
+                <input type="text" name="name" class="form-control" required />
               </div>
             </div>
           </div>
           <div class="form-group">
             <div class="form-row">
+              <label for="email">Email Address</label>
               <div class="col">
-                <input type="email" name="email" class="form-control" placeholder="Email Address*" required />
+                <input type="email" name="email" class="form-control" required />
               </div>
             </div>
           </div>
           <div class="form-group">
-            <textarea placeholder="Your Message*" class="form-control" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+            <div class="form-row">
+              <textarea class="form-control" name="message" rows="5" required></textarea>
+            </div>
+
             <input type="hidden" name="_next" value="https://bdfisher.dev/thanks.html">
             <input type="hidden" name="_autoresponse" value="Thank you for your message. I will get back to you soon.">
           </div>

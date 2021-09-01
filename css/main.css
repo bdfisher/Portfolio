@@ -525,7 +525,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 2fr 1fr;
     -ms-grid-rows: 0.2fr 2fr 1fr;
         grid-template-rows: 0.2fr 2fr 1fr;
-        grid-template-areas: "... toggle" "text memoji" "wave wave";
+        grid-template-areas: '... toggle' 'text memoji' 'wave wave';
   }
   .hero-section .toggle {
     position: static;
@@ -602,7 +602,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 2fr 1fr 0.2fr;
     -ms-grid-rows: 0.2fr 4fr 2fr;
         grid-template-rows: 0.2fr 4fr 2fr;
-        grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
+        grid-template-areas: '... ... toggle' 'text image ...' 'wave wave wave';
   }
   .hero-section .hero-text {
     -ms-grid-row: 2;
@@ -784,7 +784,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr;
-        grid-template-areas: "title title title" "card1 card2 card3";
+        grid-template-areas: 'title title title' 'card1 card2 card3';
     gap: 0 1em;
   }
   .work .title {
@@ -836,7 +836,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.8fr 2.5fr;
         grid-template-rows: 0.8fr 2.5fr;
-        grid-template-areas: "title title title" "card1 card2 card3";
+        grid-template-areas: 'title title title' 'card1 card2 card3';
     gap: 1em 2em;
   }
   .work .title {
@@ -923,7 +923,7 @@ body.dark-theme .work .card .card-body .mobile-button {
     transition: all 0.2s linear 0s;
   }
   .work .card .image-overlay .effect.effect-1:before {
-    content: "\f178";
+    content: '\f178';
     font-family: FontAwesome;
     font-size: 1.6rem;
     position: absolute;
@@ -1066,7 +1066,7 @@ body.dark-theme .work .card .card-body .mobile-button {
 }
 
 .about-me .about-text .effect.effect-1:before {
-  content: "\f178";
+  content: '\f178';
   font-family: FontAwesome;
   font-size: 20px;
   position: absolute;
@@ -1131,7 +1131,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
     -ms-grid-rows: 1fr 3fr;
         grid-template-rows: 1fr 3fr;
-        grid-template-areas: "... title title ..." "... text image ...";
+        grid-template-areas: '... title title ...' '... text image ...';
   }
   .about-me .title {
     -ms-grid-row: 1;
@@ -1219,13 +1219,7 @@ body.dark-theme .work .card .card-body .mobile-button {
   margin: 0;
 }
 
-.skills .iconify {
-  width: 30.63px;
-  height: 35px;
-}
-
-.skills .center,
-.skills svg[data-icon="simple-icons:adobexd"] {
+.skills .center {
   text-align: center;
   width: 100%;
 }
@@ -1254,7 +1248,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
     -ms-grid-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
         grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
-        grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal adobe ..." "... drupaltxt adobetxt ..." "... memoji memoji ...";
+        grid-template-areas: '... title title ...' '... webdev bootstrap ...' '... webtxt boottext ...' '... drupal figma ...' '... drupaltxt figmatxt ...' '... memoji memoji ...';
   }
   .skills .title {
     -ms-grid-row: 1;
@@ -1330,25 +1324,20 @@ body.dark-theme .work .card .card-body .mobile-button {
         -ms-grid-row-align: start;
         align-self: start;
   }
-  .skills .adobexd {
+  .skills .fa-figma {
     -ms-grid-row: 4;
     -ms-grid-column: 3;
-    grid-area: adobe;
+    grid-area: figma;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .skills .adobexd .iconify,
-  .skills .adobexd svg[data-icon="simple-icons:adobexd"] {
-    width: 52.5px;
-    height: 61px;
-  }
-  .skills .adobe-text {
+  .skills .figma-text {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
-    grid-area: adobetxt;
+    grid-area: figmatxt;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: start;
@@ -1394,7 +1383,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 125px 125px 125px 125px;
         grid-template-rows: 0.2fr 125px 125px 125px 125px;
-        grid-template-areas: "title title title" "icons text1 memoji" "bootstrap text2 memoji" "drupal text3 memoji" "adobe text4 memoji";
+        grid-template-areas: 'title title title' 'icons text1 memoji' 'bootstrap text2 memoji' 'drupal text3 memoji' 'figma text4 memoji';
   }
   .skills .title {
     -ms-grid-row: 1;
@@ -1482,10 +1471,10 @@ body.dark-theme .work .card .card-body .mobile-button {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .skills .adobexd {
+  .skills .fa-figma {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
-    grid-area: adobe;
+    grid-area: figma;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
@@ -1493,12 +1482,7 @@ body.dark-theme .work .card .card-body .mobile-button {
         align-self: center;
     padding-right: 3.5rem;
   }
-  .skills .adobexd .iconify,
-  .skills .adobexd svg[data-icon="simple-icons:adobexd"] {
-    width: 55px;
-    height: 67px;
-  }
-  .skills .adobe-text {
+  .skills .figma-text {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
     grid-area: text4;
@@ -1563,13 +1547,26 @@ body.dark-theme .work .card .card-body .mobile-button {
   padding-top: 2em;
 }
 
-.contact .container form {
-  text-align: center;
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .container form .form-control {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
+}
+
+.contact .container form label {
+  font-family: 'Poppins', sans-serif;
+  color: #22223b;
+  font-size: 2.25rem;
+  text-align: left;
+  font-weight: bold;
 }
 
 .contact .container form input,
@@ -1579,10 +1576,6 @@ body.dark-theme .work .card .card-body .mobile-button {
   border-radius: 3px;
   border-style: none;
   cursor: text;
-}
-
-.contact .container form input {
-  height: 50px;
 }
 
 .contact .container form button {
@@ -1629,14 +1622,14 @@ body.dark-theme .work .card .card-body .mobile-button {
     padding-top: 2em;
   }
   .contact .container form .form-control {
-    font-size: 25px;
+    font-size: 20px;
   }
   .contact .container form input,
   .contact .container form textarea {
     width: 325px;
   }
   .contact .container form input {
-    height: 70px;
+    height: 50px;
   }
   .contact .container form button {
     width: 323px;
@@ -1691,7 +1684,7 @@ body.dark-theme .work .card .card-body .mobile-button {
     transition: all 0.2s linear 0s;
   }
   .contact .container form .effect.effect-1:before {
-    content: "\f178";
+    content: '\f178';
     font-family: FontAwesome;
     font-size: 2.4rem;
     position: absolute;
