@@ -12,7 +12,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 body .underline {
   display: inline;
   border-bottom: 2px solid #ef3e36;
@@ -22,13 +21,11 @@ body .underline {
   position: absolute;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   bottom: 55px;
   width: 30px;
   height: 30px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 0;
 }
 
@@ -38,8 +35,7 @@ body .underline {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   border-bottom: 3px solid #22223b;
   border-right: 3px solid #22223b;
@@ -83,13 +79,11 @@ body .underline {
 }
 
 .indicator-mobile {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   bottom: 55px;
   width: 30px;
   height: 30px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 0;
   display: block;
   margin: 0 auto;
@@ -101,8 +95,7 @@ body .underline {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   border-bottom: 3px solid #22223b;
   border-right: 3px solid #22223b;
@@ -144,7 +137,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 body .underline {
   display: inline;
   border-bottom: 2px solid #ef3e36;
@@ -154,13 +146,11 @@ body .underline {
   position: absolute;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   bottom: 55px;
   width: 30px;
   height: 30px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 0;
 }
 
@@ -170,8 +160,7 @@ body .underline {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   border-bottom: 3px solid #22223b;
   border-right: 3px solid #22223b;
@@ -215,13 +204,11 @@ body .underline {
 }
 
 .indicator-mobile {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   bottom: 55px;
   width: 30px;
   height: 30px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 0;
   display: block;
   margin: 0 auto;
@@ -233,8 +220,7 @@ body .underline {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   border-bottom: 3px solid #22223b;
   border-right: 3px solid #22223b;
@@ -267,19 +253,15 @@ body.dark-theme {
   color: #78e0dc;
   background-color: #22223b;
 }
-
 body.dark-theme .hero-section .toggle i {
   color: #78e0dc;
 }
-
 body.dark-theme .about-me .about-text .button-effect a {
   background-color: #78e0dc;
 }
-
 body.dark-theme .about-me .about-text .effect {
   color: #22223b;
 }
-
 body.dark-theme .work .card .card-body .mobile-button {
   background: #78e0dc;
   color: #22223b;
@@ -294,13 +276,12 @@ body.dark-theme .work .card .card-body .mobile-button {
     background-color: #78e0dc;
   }
   .thanks button a,
-  .thanks button a:visited,
-  .thanks button a:hover,
-  .thanks button a:focus {
+.thanks button a:visited,
+.thanks button a:hover,
+.thanks button a:focus {
     color: #22223b;
   }
 }
-
 @media (prefers-color-scheme: light) {
   .thanks {
     background-color: #f6f5f5;
@@ -310,52 +291,37 @@ body.dark-theme .work .card .card-body .mobile-button {
     background-color: #40798c;
   }
   .thanks button a,
-  .thanks button a:visited,
-  .thanks button a:hover,
-  .thanks button a:focus {
+.thanks button a:visited,
+.thanks button a:hover,
+.thanks button a:focus {
     color: #f6f5f5;
   }
 }
-
 .thanks {
   height: 100vh;
   text-align: center;
 }
-
 .thanks .container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* effect-1 styles */
 }
-
 .thanks .container img {
   height: 300px;
   width: 300px;
 }
-
 .thanks .container h1 {
   font-size: 3.5rem;
   margin: 0;
 }
-
 .thanks .container p {
   font-size: 1.5rem;
   margin: 0;
   font-weight: 300;
 }
-
 .thanks .container button {
   display: block;
   margin: 30px auto 0 auto;
@@ -367,11 +333,9 @@ body.dark-theme .work .card .card-body .mobile-button {
   padding: 5px 10px;
   text-align: center;
 }
-
 .thanks .container button a {
   text-decoration: none;
 }
-
 .thanks .container .effect {
   text-align: center;
   display: inline-block;
@@ -379,44 +343,31 @@ body.dark-theme .work .card .card-body .mobile-button {
   text-decoration: none;
   overflow: hidden;
 }
-
 .thanks .container .effect.effect-1 {
-  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
-
 .thanks .container .effect.effect-1:before {
   content: "\f30a";
   font-family: FontAwesome;
   font-size: 1.5rem;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   left: 0;
   top: 0;
   opacity: 0;
   height: 100%;
   width: 60px;
-  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
-
 .thanks .container .effect.effect-1:hover {
   text-indent: 20px;
 }
-
 .thanks .container .effect.effect-1:hover:before {
   opacity: 1;
   text-indent: 0px;
 }
-
 @media only screen and (min-height: 1000px) {
   .thanks .container {
     height: 60%;
@@ -427,15 +378,12 @@ body.dark-theme .work .card .card-body .mobile-button {
   position: relative;
   width: 100%;
 }
-
 .hero-section .wave {
   width: 100vw;
 }
-
 .hero-section .wave svg {
   width: 100%;
 }
-
 .hero-section .toggle {
   position: absolute;
   right: 25px;
@@ -445,13 +393,10 @@ body.dark-theme .work .card .card-body .mobile-button {
   cursor: pointer;
   padding: 0;
 }
-
 .hero-section .toggle i {
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  transform: rotate(-20deg);
   font-size: 2rem;
 }
-
 .hero-section h1 {
   font-weight: 400;
   font-size: 4rem;
@@ -460,7 +405,6 @@ body.dark-theme .work .card .card-body .mobile-button {
   letter-spacing: 0px;
   text-shadow: 0.5px 0.5px #707070;
 }
-
 .hero-section h1 p {
   font-weight: 200;
   font-size: 2.5rem;
@@ -469,94 +413,64 @@ body.dark-theme .work .card .card-body .mobile-button {
   width: 380px;
   margin: 0 auto;
 }
-
 .hero-section .hero-image {
   text-align: center;
 }
-
 .hero-section .hero-image img {
   height: 226px;
   width: 226px;
 }
-
 @-webkit-keyframes animate {
   0% {
     border-color: #22223b;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   20% {
     border-color: #22223b;
-    -webkit-transform: translate(15px, 15px);
-            transform: translate(15px, 15px);
+    transform: translate(15px, 15px);
   }
-  20.1%,
-  100% {
+  20.1%, 100% {
     border-color: #ef3e36;
   }
 }
-
 @keyframes animate {
   0% {
     border-color: #22223b;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   20% {
     border-color: #22223b;
-    -webkit-transform: translate(15px, 15px);
-            transform: translate(15px, 15px);
+    transform: translate(15px, 15px);
   }
-  20.1%,
-  100% {
+  20.1%, 100% {
     border-color: #ef3e36;
   }
 }
-
 .hero-section .indicator {
   display: none;
 }
-
 @media only screen and (min-width: 700px) {
   .hero-section {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-    -ms-grid-rows: 0.2fr 2fr 1fr;
-        grid-template-rows: 0.2fr 2fr 1fr;
-        grid-template-areas: '... toggle' 'text memoji' 'wave wave';
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr 2fr 1fr;
+    grid-template-areas: "... toggle" "text memoji" "wave wave";
   }
   .hero-section .toggle {
     position: static;
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: toggle;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: end;
-        justify-self: end;
+    align-self: center;
+    justify-self: end;
     padding-right: 3em;
   }
   .hero-section .indicator-mobile {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: wave;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    align-self: end;
   }
   .hero-section .hero-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: text;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: center;
+    justify-self: center;
   }
   .hero-section .hero-text h1 {
     text-align: left;
@@ -569,50 +483,31 @@ body.dark-theme .work .card .card-body .mobile-button {
     margin: 0;
   }
   .hero-section .hero-image {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: memoji;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: center;
+    justify-self: center;
   }
   .hero-section .hero-image img {
     height: 275px;
     width: 275px;
   }
   .hero-section .wave {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: wave;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .hero-section {
     height: 100vh;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 1fr 0.2fr;
-        grid-template-columns: 2fr 1fr 0.2fr;
-    -ms-grid-rows: 0.2fr 4fr 2fr;
-        grid-template-rows: 0.2fr 4fr 2fr;
-        grid-template-areas: '... ... toggle' 'text image ...' 'wave wave wave';
+    grid-template-columns: 2fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 4fr 2fr;
+    grid-template-areas: "... ... toggle" "text image ..." "wave wave wave";
   }
   .hero-section .hero-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: text;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .hero-section .hero-text h1 {
     font-weight: 400;
@@ -624,20 +519,15 @@ body.dark-theme .work .card .card-body .mobile-button {
     padding-left: 0.75em;
   }
   .hero-section .hero-text h1 p {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-weight: 200;
     line-height: 9.8rem;
     width: 100%;
   }
   .hero-section .hero-image {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: image;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .hero-section .hero-image img {
     height: 400px;
@@ -645,25 +535,17 @@ body.dark-theme .work .card .card-body .mobile-button {
     padding-left: 0.75em;
   }
   .hero-section .wave {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: wave;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    align-self: end;
     margin-bottom: -0.625em;
   }
   .hero-section .toggle {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
     grid-area: toggle;
     padding-top: 1rem;
   }
   .hero-section .toggle i {
     font-size: 27px;
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
+    transform: rotate(-20deg);
     color: #22223b;
   }
   .hero-section .indicator-mobile {
@@ -675,32 +557,26 @@ body.dark-theme .work .card .card-body .mobile-button {
   @-webkit-keyframes animate {
     0% {
       border-color: #22223b;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     20% {
       border-color: #22223b;
-      -webkit-transform: translate(15px, 15px);
-              transform: translate(15px, 15px);
+      transform: translate(15px, 15px);
     }
-    20.1%,
-    100% {
+    20.1%, 100% {
       border-color: #ef3e36;
     }
   }
   @keyframes animate {
     0% {
       border-color: #22223b;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     20% {
       border-color: #22223b;
-      -webkit-transform: translate(15px, 15px);
-              transform: translate(15px, 15px);
+      transform: translate(15px, 15px);
     }
-    20.1%,
-    100% {
+    20.1%, 100% {
       border-color: #ef3e36;
     }
   }
@@ -709,7 +585,6 @@ body.dark-theme .work .card .card-body .mobile-button {
 .work {
   width: 100%;
 }
-
 .work h2 {
   font-weight: 400;
   font-size: 4rem;
@@ -719,39 +594,32 @@ body.dark-theme .work .card .card-body .mobile-button {
   text-shadow: 0.5px 0.5px #707070;
   margin-top: 0;
 }
-
 .work .card {
   width: 330px;
   height: 370px;
-  -webkit-box-shadow: 0px 2px 10px #40798ccc;
-          box-shadow: 0px 2px 10px #40798ccc;
+  box-shadow: 0px 2px 10px rgba(64, 121, 140, 0.8);
   border-radius: 5px;
   padding: 0;
   display: block;
   margin: 0 auto 20px auto;
   position: relative;
 }
-
 .work .card .image-overlay {
   display: none;
 }
-
 .work .card img {
   border-radius: 5px;
   width: 100%;
   height: 50%;
 }
-
 .work .card .card-body {
   padding-top: 1px;
   text-align: center;
 }
-
 .work .card .card-body .card-title {
   font-size: 2rem;
   margin: 0;
 }
-
 .work .card .card-body .card-text {
   text-align: left;
   margin: 0 10px 0 10px;
@@ -759,13 +627,11 @@ body.dark-theme .work .card .card-body .mobile-button {
   font-weight: 200;
   line-height: 18px;
 }
-
 .work .card .card-body .made-with {
   font-weight: bold;
   margin: 0 10px 10px 5px;
   font-size: 1.3rem;
 }
-
 .work .card .card-body .mobile-button {
   background: #40798c;
   color: #f6f5f5;
@@ -775,80 +641,52 @@ body.dark-theme .work .card .card-body .mobile-button {
   font-size: 1.2rem;
   cursor: pointer;
 }
-
 @media only screen and (min-width: 1027px) {
   .work {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.2fr 1fr;
-        grid-template-rows: 0.2fr 1fr;
-        grid-template-areas: 'title title title' 'card1 card2 card3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: "title title title" "card1 card2 card3";
     gap: 0 1em;
   }
   .work .title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: title;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .work .title h2 {
     font-size: 5rem;
   }
   .work .card {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .work .card1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: card1;
   }
   .work .card2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: card2;
   }
   .work .card3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
     grid-area: card3;
   }
 }
-
 @media only screen and (min-width: 1027px) and (hover: hover) {
   .work .card-body .mobile-button {
     display: none;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .work {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.8fr 2.5fr;
-        grid-template-rows: 0.8fr 2.5fr;
-        grid-template-areas: 'title title title' 'card1 card2 card3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 2.5fr;
+    grid-template-areas: "title title title" "card1 card2 card3";
     gap: 1em 2em;
   }
   .work .title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: title;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    justify-self: center;
+    align-self: end;
     margin-top: 7em;
   }
   .work .title h2 {
@@ -862,13 +700,11 @@ body.dark-theme .work .card .card-body .mobile-button {
   .work .card {
     width: 375px;
     height: 450px;
-    -webkit-box-shadow: 0px 2px 10px #40798ccc;
-            box-shadow: 0px 2px 10px #40798ccc;
+    box-shadow: 0px 2px 10px rgba(64, 121, 140, 0.8);
     border-radius: 5px;
     padding: 0;
     margin: 0;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .work .card .image-overlay {
     display: block;
@@ -879,21 +715,11 @@ body.dark-theme .work .card .card-body .mobile-button {
     height: 50%;
     background: rgba(0, 0, 0, 0.6);
     color: #ef3e36;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
     /* effect-1 styles */
   }
@@ -919,29 +745,21 @@ body.dark-theme .work .card .card-body .mobile-button {
     overflow: hidden;
   }
   .work .card .image-overlay .effect.effect-1 {
-    -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
   }
   .work .card .image-overlay .effect.effect-1:before {
-    content: '\f178';
+    content: "\f178";
     font-family: FontAwesome;
     font-size: 1.6rem;
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     right: 0;
     top: 0;
     opacity: 0;
     height: 100%;
     width: 40px;
-    -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
   }
   .work .card .image-overlay .effect.effect-1:hover {
@@ -976,22 +794,15 @@ body.dark-theme .work .card .card-body .mobile-button {
     font-size: 1.6rem;
   }
   .work .card1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: card1;
   }
   .work .card2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: card2;
   }
   .work .card3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
     grid-area: card3;
   }
 }
-
 @media only screen and (min-width: 1920px) {
   .work {
     margin-top: 12.8em;
@@ -1014,7 +825,6 @@ body.dark-theme .work .card .card-body .mobile-button {
 .about-me {
   width: 100%;
 }
-
 .about-me .title h2 {
   font-weight: 400;
   font-size: 4rem;
@@ -1023,11 +833,9 @@ body.dark-theme .work .card .card-body .mobile-button {
   letter-spacing: 0px;
   text-shadow: 0.5px 0.5px #707070;
 }
-
 .about-me .about-text {
   /* effect-1 styles */
 }
-
 .about-me .about-text p {
   font-weight: 200;
   font-size: 20px;
@@ -1036,17 +844,14 @@ body.dark-theme .work .card .card-body .mobile-button {
   width: 80%;
   margin: 0 auto;
 }
-
 .about-me .about-text .button-effect {
   text-align: center;
   padding: 30px 0px;
 }
-
 .about-me .about-text .button-effect a {
   background-color: #40798c;
   font-size: 20px;
 }
-
 .about-me .about-text .effect {
   text-align: center;
   display: inline-block;
@@ -1059,54 +864,39 @@ body.dark-theme .work .card .card-body .mobile-button {
   border-radius: 6px;
   overflow: hidden;
 }
-
 .about-me .about-text .effect.effect-1 {
-  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
-
 .about-me .about-text .effect.effect-1:before {
-  content: '\f178';
+  content: "\f178";
   font-family: FontAwesome;
   font-size: 20px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   right: 0;
   top: 0;
   opacity: 0;
   height: 100%;
   width: 40px;
-  -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
-
 .about-me .about-text .effect.effect-1:hover {
   text-indent: -20px;
 }
-
 .about-me .about-text .effect.effect-1:hover:before {
   opacity: 1;
   text-indent: 0px;
 }
-
 .about-me .memoji {
   text-align: center;
 }
-
 .about-me .memoji img {
   width: 201.3px;
   height: 266.25px;
   padding: 0;
 }
-
 @media only screen and (min-width: 700px) {
   .about-me {
     margin-top: 1em;
@@ -1122,27 +912,17 @@ body.dark-theme .work .card .card-body .mobile-button {
     height: 331.09px;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .about-me {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 0.8fr 2fr 1fr 0.8fr;
-        grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
-    -ms-grid-rows: 1fr 3fr;
-        grid-template-rows: 1fr 3fr;
-        grid-template-areas: '... title title ...' '... text image ...';
+    grid-template-columns: 0.8fr 2fr 1fr 0.8fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "... title title ..." "... text image ...";
   }
   .about-me .title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-area: title;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    justify-self: center;
+    align-self: end;
   }
   .about-me .title h2 {
     font-weight: 400;
@@ -1153,14 +933,9 @@ body.dark-theme .work .card .card-body .mobile-button {
     text-shadow: 0.5px 0.5px #707070;
   }
   .about-me .about-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: text;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: start;
+    justify-self: center;
   }
   .about-me .about-text p {
     font-weight: 200;
@@ -1168,14 +943,9 @@ body.dark-theme .work .card .card-body .mobile-button {
     line-height: 4.8rem;
   }
   .about-me .memoji {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
     grid-area: image;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    justify-self: center;
+    align-self: start;
   }
   .about-me .memoji img {
     width: 325px;
@@ -1183,7 +953,6 @@ body.dark-theme .work .card .card-body .mobile-button {
     padding: 0;
   }
 }
-
 @media only screen and (min-width: 1920px) {
   .about-me {
     margin-top: 12.8em;
@@ -1196,7 +965,6 @@ body.dark-theme .work .card .card-body .mobile-button {
 .skills {
   width: 100%;
 }
-
 .skills .title h2 {
   font-weight: 400;
   font-size: 4rem;
@@ -1206,143 +974,87 @@ body.dark-theme .work .card .card-body .mobile-button {
   text-shadow: 0.5px 0.5px #707070;
   padding-top: 0.8em;
 }
-
 .skills .webdev-icons {
   text-align: center;
   margin: 0;
 }
-
 .skills i {
   font-size: 35px;
   padding-left: 2px;
   padding-right: 2px;
   margin: 0;
 }
-
 .skills .center {
   text-align: center;
   width: 100%;
 }
-
 .skills p {
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
   margin: 5px 0;
 }
-
 .skills .memoji {
   text-align: center;
 }
-
 .skills .memoji img {
   width: 226px;
   height: 226px;
 }
-
 @media only screen and (min-width: 700px) {
   .skills {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 0.2fr 1fr 1fr 0.2fr;
-        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
-    -ms-grid-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
-        grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
-        grid-template-areas: '... title title ...' '... webdev bootstrap ...' '... webtxt boottext ...' '... drupal figma ...' '... drupaltxt figmatxt ...' '... memoji memoji ...';
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+    grid-template-areas: "... title title ..." "... webdev bootstrap ..." "... webtxt boottext ..." "... drupal figma ..." "... drupaltxt figmatxt ..." "... memoji memoji ...";
   }
   .skills .title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-area: title;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .title h2 {
     font-size: 5rem;
   }
   .skills .webdev-icons {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: webdev;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .webdev-text {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: webtxt;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    justify-self: center;
+    align-self: start;
   }
   .skills .fa-bootstrap {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
     grid-area: bootstrap;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .bootstrap-text {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
     grid-area: boottext;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    justify-self: center;
+    align-self: start;
   }
   .skills .fa-drupal {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
     grid-area: drupal;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .drupal-text {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
     grid-area: drupaltxt;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    justify-self: center;
+    align-self: start;
   }
   .skills .fa-figma {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
     grid-area: figma;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .figma-text {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
     grid-area: figmatxt;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    justify-self: center;
+    align-self: start;
   }
   .skills i {
     font-size: 60px;
@@ -1352,49 +1064,32 @@ body.dark-theme .work .card .card-body .mobile-button {
     margin: 10px 0;
   }
   .skills .memoji {
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
     grid-area: memoji;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .memoji img {
     width: 264px;
     height: 264px;
   }
 }
-
 @media only screen and (min-width: 915px) {
   .skills .memoji img {
     width: 284px;
     height: 284px;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .skills {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.2fr 125px 125px 125px 125px;
-        grid-template-rows: 0.2fr 125px 125px 125px 125px;
-        grid-template-areas: 'title title title' 'icons text1 memoji' 'bootstrap text2 memoji' 'drupal text3 memoji' 'figma text4 memoji';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 125px 125px 125px 125px;
+    grid-template-areas: "title title title" "icons text1 memoji" "bootstrap text2 memoji" "drupal text3 memoji" "figma text4 memoji";
   }
   .skills .title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: title;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .title h2 {
     margin: 0;
@@ -1407,90 +1102,50 @@ body.dark-theme .work .card .card-body .mobile-button {
     text-shadow: 0.5px 0.5px #707070;
   }
   .skills .webdev-icons {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: icons;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .webdev-icons i {
     padding: 0 6px 0 6px;
   }
   .skills .webdev-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: text1;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .fa-bootstrap {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: bootstrap;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
     padding-right: 3.5rem;
   }
   .skills .bootstrap-text {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: text2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .fa-drupal {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
     grid-area: drupal;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
     padding-right: 3.5rem;
   }
   .skills .drupal-text {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
     grid-area: text3;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .fa-figma {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
     grid-area: figma;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
     padding-right: 3.5rem;
   }
   .skills .figma-text {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
     grid-area: text4;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills i {
     font-size: 6.5rem;
@@ -1502,22 +1157,15 @@ body.dark-theme .work .card .card-body .mobile-button {
     margin: 0;
   }
   .skills .memoji {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 4;
-    -ms-grid-column: 3;
     grid-area: memoji;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
   .skills .memoji img {
     width: 421px;
     height: 421px;
   }
 }
-
 @media only screen and (min-width: 1920px) {
   .skills {
     margin-top: 12.8em;
@@ -1527,13 +1175,11 @@ body.dark-theme .work .card .card-body .mobile-button {
 .contact {
   width: 100%;
 }
-
 .contact .contact-bg {
   background: #ef3e36;
   -webkit-clip-path: circle(85% at 50% 84%);
           clip-path: circle(85% at 50% 84%);
 }
-
 .contact .title h2 {
   font-weight: 400;
   font-size: 4rem;
@@ -1546,29 +1192,21 @@ body.dark-theme .work .card .card-body .mobile-button {
   margin-bottom: 30px;
   padding-top: 2.5em;
 }
-
 .contact .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .contact .container form .form-control {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
-
 .contact .container form label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #22223b;
   font-size: 2.25rem;
   text-align: left;
   font-weight: bold;
 }
-
 .contact .container form input,
 .contact .container form textarea {
   width: 225px;
@@ -1577,7 +1215,6 @@ body.dark-theme .work .card .card-body .mobile-button {
   border-style: none;
   cursor: text;
 }
-
 .contact .container form button {
   display: block;
   margin: 0 auto;
@@ -1591,24 +1228,20 @@ body.dark-theme .work .card .card-body .mobile-button {
   padding: 5px 15px;
   cursor: pointer;
 }
-
 .contact .icons {
   text-align: center;
 }
-
 .contact .icons a,
 .contact .icons :visited,
 .contact .icons :hover,
 .contact .icons :focus {
   color: #22223b;
 }
-
 .contact .icons i {
   font-size: 35px;
   padding: 20px 20px 0 20px;
   cursor: pointer;
 }
-
 @media only screen and (min-width: 700px) {
   .contact .contact-bg {
     -webkit-clip-path: circle(73% at 50% 84%);
@@ -1625,7 +1258,7 @@ body.dark-theme .work .card .card-body .mobile-button {
     font-size: 20px;
   }
   .contact .container form input,
-  .contact .container form textarea {
+.contact .container form textarea {
     width: 325px;
   }
   .contact .container form input {
@@ -1640,14 +1273,12 @@ body.dark-theme .work .card .card-body .mobile-button {
     font-size: 60px;
   }
 }
-
 @media only screen and (min-width: 915px) {
   .contact .contact-bg {
     -webkit-clip-path: circle(65% at 50% 84%);
             clip-path: circle(65% at 50% 84%);
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .contact .contact-bg {
     -webkit-clip-path: none;
@@ -1680,29 +1311,21 @@ body.dark-theme .work .card .card-body .mobile-button {
     overflow: hidden;
   }
   .contact .container form .effect.effect-1 {
-    -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
   }
   .contact .container form .effect.effect-1:before {
-    content: '\f178';
+    content: "\f178";
     font-family: FontAwesome;
     font-size: 2.4rem;
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     right: 0;
     top: 0;
     opacity: 0;
     height: 100%;
     width: 60px;
-    -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
   }
   .contact .container form .effect.effect-1:hover {
@@ -1716,10 +1339,8 @@ body.dark-theme .work .card .card-body .mobile-button {
     font-size: 6.5rem;
   }
 }
-
 @media only screen and (min-width: 1920px) {
   .contact {
     margin-top: 19.2em;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
